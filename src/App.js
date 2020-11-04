@@ -1,11 +1,17 @@
 import './App.css';
-import LandingPage from './Components/LandingPage/LandingPage'
+import LandingPage from './Components/LandingPage/LandingPage';
+import { BrowserRouter } from 'react-router-dom';
+import MobileNav from './Containers/MobileNav/MobileNav';
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <LandingPage/>
+        <MobileNav/>
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
