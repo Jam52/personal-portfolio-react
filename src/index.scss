@@ -1,4 +1,7 @@
 @import 'base';
+html {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,10 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
   background-size: 100%;
-  overflow: hidden;
+
   background-image: url('./background.png');
   background-attachment: fixed;
   background-repeat: repeat-y;

@@ -1,6 +1,8 @@
 @import '../../base';
 
 .container {
+  height: 1;
+  width: 1;
   display: block;
 }
 
@@ -9,8 +11,8 @@
   position: fixed;
   right: 10px;
   top: 10px;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
 }
 

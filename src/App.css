@@ -1,6 +1,15 @@
 .App {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
+}
+.page {
+  overflow: hidden;
+}
+
+.landingPage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 800px) {
