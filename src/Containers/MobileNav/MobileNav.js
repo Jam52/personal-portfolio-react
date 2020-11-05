@@ -18,7 +18,6 @@ class MobileNav extends Component {
                 <div className={classes.menu} onClick={this.toggleNavList}>
                     <img src={crossIcon} alt=""></img>
                 </div>
-               
                 <NavList isVisible={this.state.navListIsVisbible} click={this.toggleNavList}/>
             </div>
         )

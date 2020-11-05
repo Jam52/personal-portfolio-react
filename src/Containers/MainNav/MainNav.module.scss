@@ -1,0 +1,11 @@
+@import '../../base';
+
+.container {
+  display: none;
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    display: block;
+  }
+}

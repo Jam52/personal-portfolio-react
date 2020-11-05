@@ -53,3 +53,19 @@
 .delayFour {
   transition-delay: 300ms;
 }
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    transform: translateX(15rem);
+    transition-duration: 0.5s;
+    justify-content: flex-start;
+
+    p {
+      margin-left: 2rem;
+    }
+
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+}
