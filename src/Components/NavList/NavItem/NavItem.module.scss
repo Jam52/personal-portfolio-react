@@ -1,0 +1,71 @@
+@import '../../../base';
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #000;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: 1s;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: #000;
+    font-family: $font-title;
+  }
+}
+
+.hidden {
+  transform: translateX(150vw);
+}
+
+.active {
+  background-color: rgb(79, 55, 97);
+  p {
+    color: #fff;
+  }
+}
+
+.delayOne {
+  transition-delay: 0ms;
+}
+
+.delayTwo {
+  transition-delay: 100ms;
+}
+
+.delayThree {
+  transition-delay: 200ms;
+}
+
+.delayFour {
+  transition-delay: 300ms;
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    transform: translateX(15rem);
+    transition-duration: 0.5s;
+    justify-content: flex-start;
+
+    p {
+      margin-left: 2rem;
+    }
+
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+}

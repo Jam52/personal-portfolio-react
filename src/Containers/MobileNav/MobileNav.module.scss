@@ -1,0 +1,29 @@
+@import '../../base';
+
+.container {
+  height: 1;
+  width: 1;
+  display: block;
+}
+
+.menu {
+  z-index: 10;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: $media-break-point-phone) {
+  .container {
+    width: 50vw;
+  }
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    display: none;
+  }
+}

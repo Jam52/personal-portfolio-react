@@ -1,0 +1,24 @@
+@import '../../base';
+
+.container {
+  position: fixed;
+  display: flex;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: $media-break-point-phone) {
+  .container {
+    width: 50vw;
+  }
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    width: 20rem;
+  }
+}

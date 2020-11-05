@@ -1,0 +1,16 @@
+@import '../../base';
+
+.header {
+  width: 90vw;
+  text-align: center;
+  //   position: relative;
+  //   //   transform: translateY(-50%);
+  //   //   top: 50%;
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .header {
+    text-align: start;
+    width: 60rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes from './LandingPage.module.scss';
+import classes from './AboutMeTransition.module.scss';
 import TypeWriter from './TypeWriter/TypeWriter';
 
 
@@ -7,8 +7,8 @@ class LandingPage extends Component {
  
     state = {
         words: ['a web developer', 'a designer', 'a life long learner', 'an avid reader', 'a boardgame designer', 'a father', 'a guitarist', 'a sci-fi lover', 'a drummer'],
-        currentWord: 'web developer',
-        count: 0
+        currentWord: 'a web developer',
+        count: 1
 
     }
 
@@ -31,7 +31,7 @@ class LandingPage extends Component {
         return (
         
                 <div className={classes.header}>
-                    <h1>Hi, My Name is Jamie and I am</h1>
+                    <h1>Hi, My name is Jamie and I am</h1>
                     <TypeWriter word={this.state.currentWord}/>
                 </div> 
     
