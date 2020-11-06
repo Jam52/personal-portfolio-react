@@ -1,0 +1,23 @@
+@import '../../base';
+
+.container {
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  color: $colour-primary;
+  margin-bottom: 2rem;
+}
+
+.para {
+  max-width: 65ch;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}

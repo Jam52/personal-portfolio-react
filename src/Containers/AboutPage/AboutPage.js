@@ -5,7 +5,7 @@ import furniture from './furniture.jpg';
 import profilePic from './profile.png';
 import computer from './computer.jpg';
 import road from './road.jpg';
-import AboutMeTransition from '../AboutMeTransition/AboutMeTransition'
+import AboutMeTransition from '../../Components/AboutMeTransition/AboutMeTransition'
 
 const AboutPage = () => {
     return (
