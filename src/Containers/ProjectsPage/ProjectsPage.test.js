@@ -13,6 +13,8 @@ describe('ProjectsPage', () => {
         expect(wrapper.find(ProjectCard)).toHaveLength(wrapper.state().projects.length)
     })
 
-    
+    test('filter')
+
+
 
 })

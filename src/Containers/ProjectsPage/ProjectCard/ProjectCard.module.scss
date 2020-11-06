@@ -3,7 +3,8 @@
 .card {
   background-color: transparent;
   width: 100%;
-  padding-top: 100%;
+  max-width: 23rem;
+  padding-top: unquote('min(100%, 23rem)');
   perspective: 1000px;
   position: relative;
   cursor: pointer;

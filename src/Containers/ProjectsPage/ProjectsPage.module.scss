@@ -15,9 +15,68 @@
 }
 
 .cardContainer {
+  margin: auto;
+  margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   grid-template-rows: auto;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+}
+
+.filter {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.filter_form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-family: $font-title;
+    font-size: 1.5rem;
+  }
+}
+
+.filter_select {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+
+.filter_labelContainer {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.filter_label {
+  cursor: pointer;
+  display: flex;
+  background-color: $colour-primary;
+  color: #fff;
+  border-radius: 0.2rem;
+  p {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .filter_form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter_select {
+    margin: 0 0 0 2rem;
+    width: 15rem;
+  }
 }
