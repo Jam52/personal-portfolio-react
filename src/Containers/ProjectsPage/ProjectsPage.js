@@ -5,51 +5,35 @@ import ProjectCard from './ProjectCard/ProjectCard';
 class ProjectPage extends Component {
     state = {
         projects: {
-            "madame-mimi's": ['react', 'web development', 'redux', 'html', 'css', "restfull api's"],
-            "travel-planner": ["restfull api's", 'web development', 'html', 'css'],
-            "smallfoods": ['web development', 'html', 'css'],
-            "boardgame-marketplace": ['react', 'web development', 'redux', 'html', 'css', "restfull api's", 'work in progress'],
-            "orbit":  ['furniture design', 'industrial design'],
-            "float": ['interior design', 'industrial design'],
-            "dmz":['interior design', 'industrial design'],
-            "shobu":  ['boardgame design'],
-            "semantic": ['web development', 'html', 'css', "restfull api's"]
+            "madame-mimi's": ['all', 'web development'],
+            "travel-planner": ['all', 'web development'],
+            "smallfoods": ['all','web development' ],
+            "boardgame-marketplace": ['all','web development'],
+            "orbit":  ['all','furniture design', 'industrial design'],
+            "float": ['all','interior design', 'industrial design'],
+            "dmz":['all','interior design', 'industrial design'],
+            "shobu":  ['all','boardgame design'],
+            "semantic": ['all','web development'],
+            "personal": ['all',  'web development']
         },
-        labels: [],
-        selectedLabels: ['web development']
+        labels: ['web development', 'industrial design', 'interior design', 'boardgame design', 'furniture design',  'all'],
+        selectedLabel: 'web development'
       
     }
 
-    componentDidMount() {
-        let allLabels = []
-        Object.keys(this.state.projects).forEach(project => {
-            allLabels = allLabels.concat(this.state.projects[project])
-        })
-        const labelSet = new Set(allLabels)
-        this.setState({labels: [...labelSet]})
-    }
-    
-    addLabelHandeler = (event) => {
+
+    onSelectChangeHandeler = (event) => {
         event.preventDefault()
-        const value = event.target
-        if(!this.state.selectedLabels.includes(value)) {
-            this.setState({selectedLabels: [...this.state.selectedLabels, event.target.value]})
-        }
-        
+        this.setState({selectedLabel: event.target.value})
     }
-
-    removeLabelHandler = (value) => {
-        this.setState({selectedLabels: [...this.state.selectedLabels].filter(label => label !== value)})
-    }
-
     
 
     render() {
         let filteredProjects = Object.keys(this.state.projects).filter(projectKey => {
-            return filterArrays(this.state.selectedLabels, this.state.projects[projectKey])
+            return this.state.projects[projectKey].includes(this.state.selectedLabel)
         })
 
-        let projectCards = filteredProjects.map((projectKey, index) => {
+        let projectCards = filteredProjects.sort().map((projectKey, index) => {
             return <ProjectCard title={projectKey} key={index}/>
         })
 
@@ -57,24 +41,22 @@ class ProjectPage extends Component {
             return <option value={label} className={classes.option}>{label}</option>
         })
 
-        const selectedLabels = this.state.selectedLabels.map((label, index) => {
-            return <div className={classes.filter_label} key={label + index} onClick={() => this.removeLabelHandler(label)}>
-                <p>X</p><p>{label}</p>
-            </div>
-        })
-
         return (
             <div data-test="component-project-card" className={classes.container}>
-                <h1 className={classes.title}>Projects</h1>
-                <div className={classes.filter}>
-                    <form className={classes.filter_form}>
-                        <label for="dropdown">Filter By Label</label>
-                        <select className={classes.filter_select} onChange={(event) => {this.addLabelHandeler(event)}}>{labels}</select>
-                    </form>
-                    <div className={classes.filter_labelContainer}>
-                        {selectedLabels}
+                <div className={classes.landing}>
+                    <h1 className={classes.title}>Projects_</h1>
+                    <div className={classes.filter}>
+                        <div>
+                            <p className={classes.para}>Please explore my projects below.</p>
+                            <p className={classes.para}>You will find a selection of my web development projects so far, projects from my industrial/interior design career and personal projects that I am particularly proud of</p> 
+                        </div>
+                        <form className={classes.filter_form}>
+                            <label for="dropdown">Filter By Category</label>
+                            <select className={classes.filter_select} onChange={(event) => {this.onSelectChangeHandeler(event)}}>{labels}</select>
+                        </form>
                     </div>
                 </div>
+                
                 <div  className={classes.cardContainer}>
                     {projectCards}
                 </div>
@@ -83,9 +65,5 @@ class ProjectPage extends Component {
     }
 }
 
-export const filterArrays = (arr1, arr2) => {
-    const found  = arr1.some( label => arr2.includes(label));
-    return found
-}
 
 export default ProjectPage;

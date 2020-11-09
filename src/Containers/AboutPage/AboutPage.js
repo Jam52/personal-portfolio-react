@@ -5,24 +5,26 @@ import furniture from './furniture.jpg';
 import profilePic from './profile.png';
 import computer from './computer.jpg';
 import road from './road.jpg';
-import AboutMeTransition from '../../Components/AboutMeTransition/AboutMeTransition'
 
 const AboutPage = () => {
     return (
         
         <div>
-            <div className={classes.section}>
-                <div className={classes.profile}>
-                    <img src={profilePic} alt="jamie photograph"></img>
+            <div className={classes.landing}>
+                <h1 className={classes.title}>About me_</h1>
+                <div className={classes.landing_intro}>
+                    <div className={classes.profile}>
+                        <img src={profilePic} alt="jamie photograph"></img>
+                    </div>
+                    <p className={classes.landing_para}>Hi, thank you for checking out my portfolio site! I am an aspiring web developer, formally industrial designer, with a passion for building things. Please scroll down for a little more about me and my journey so far. 
+                    </p>
                 </div>
-                <AboutMeTransition/>
             </div>
             
-            <div className={[classes.section, classes.section___dark].join(' ')}>
+            <div className={classes.section}>
                 <div className={classes.section_paragraph} >
                     <h3 className={classes.section_subtitle}>Begin at the begining</h3>
-                    <p>Hi, firstly thanks for checking out my portfolio site! I am an aspiring web developer, formally industrial designer, with a passion for building things. 
-                    </p>
+                
                     <p>
                     Ive always been a builder, one of those kids obsessed with legos, making sand castles and scultpures out of mud and sticks (I still do) and the drive to build and create never left me.
                     </p>
@@ -36,7 +38,7 @@ const AboutPage = () => {
                 </div>
                 
             </div>
-            <div className={classes.section}>
+            <div className={[classes.section, classes.section___dark].join(' ')}>
                 <div className={classes.section_paragraph} >
                     <h3 className={classes.section_subtitle}>My road to Code</h3>
                     <p>

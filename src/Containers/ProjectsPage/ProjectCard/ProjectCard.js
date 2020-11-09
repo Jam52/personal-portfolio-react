@@ -13,7 +13,8 @@ class ProjectCard extends Component {
             "dmz": {title: "DMZ", description: "An reception design project for a tech incubartor in Toronto.", details: "Interior Design", thumb: "/images/dmz-thumb.jpg"},
             "boardgame-marketplace": {title: "Boardgame Marketplace", description: "Work in progress", details: "React, Redux, RESTful Api, PostgreSQL", thumb: "/images/boardgame-thumb.jpg"},
             "shobu": {title: "Shobu", description: "A two player abstract strategy game, designed to be a modern classic.", details: "Boardgame Design", thumb: "/images/shobu-thumb.jpg"},
-            "semantic": {title: "Semantic Evaluator", description: "Udemy Project to semantically evaluate text for url.", details: "Html, Css, JavaScript, RESTful Api", thumb: "/images/semantic-thumb.jpg"}
+            "semantic": {title: "Semantic Evaluator", description: "Udemy Project to semantically evaluate text for url.", details: "Html, Css, JavaScript, RESTful Api", thumb: "/images/semantic-thumb.jpg"},
+            "personal": {title: "Personal Portfolio", description: "A static web page to present my accomplishments and projects so far.", details: "Html, Css, JavaScript, React", thumb: "/images/personal-thumb.jpg"}
         },
     }
 
