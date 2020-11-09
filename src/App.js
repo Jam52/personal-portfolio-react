@@ -5,6 +5,8 @@ import MobileNav from './Containers/MobileNav/MobileNav';
 import MainNav from './Containers/MainNav/MainNav';
 import AboutPage from './Containers/AboutPage/AboutPage';
 import ProjectsPage from './Containers/ProjectsPage/ProjectsPage';
+import ContactPage from './Containers/ContactPage/ContactPage';
+import TechnicalPage from './Containers/TechnicalPage/TechnicalPage';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Switch>
           <Route path='/about' component={AboutPage}/>
           <Route path="/projects" component={ProjectsPage}/>
+          <Route path='/contact' component={ContactPage}/>
+          <Route path='/technical_skills' component={TechnicalPage}/>
             <Route path='/'>
             <div className='landingPage'>
                 <AboutMeTransition/>
