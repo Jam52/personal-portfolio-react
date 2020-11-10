@@ -21,7 +21,7 @@
   bottom: 0;
   width: 150vw;
   overflow: hidden;
-  background-color: $colour-primary;
+  background-color: $colour-red;
   opacity: 0.75;
 }
 
@@ -42,7 +42,7 @@
   bottom: 0;
   width: 150vw;
   overflow: hidden;
-  background-color: $colour-primary;
+  background-color: $colour-red;
 }
 
 .para {
@@ -64,6 +64,7 @@
 }
 
 .filter {
+  flex-grow: 1;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -77,6 +78,7 @@
 .filter_form {
   display: flex;
   flex-direction: column;
+
   label {
     font-family: $font-title;
     font-size: 1.5rem;
@@ -90,7 +92,7 @@
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   color: #fff;
-  background-color: $colour-primary;
+  background-color: $colour-secondary;
 }
 
 .filter_labelContainer {

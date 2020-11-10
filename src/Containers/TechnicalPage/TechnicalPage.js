@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './TechnicalPage.module.scss';
 import EducationTile from './EducationTile/EducationTile';
 
 const TechnicalPage = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    });
+
  return (
     <div className={classes.container}>
          <div className={classes.landing}>

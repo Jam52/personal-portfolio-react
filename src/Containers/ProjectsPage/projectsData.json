@@ -1,0 +1,74 @@
+{ "data" : [
+    { 
+        "title": "Madame Mimi's", 
+        "description": "A static web application to expore cocktails.", 
+        "details": "React, Redux, RESTful Api's", 
+        "thumb": "/images/madame-mimis-thumb.jpg",
+        "labels": ["All", "Web Development"]
+    },
+    {
+        "title": "Travel Planner", 
+        "description": "dacity Capstone Project - Travel planner.", 
+        "details": "Html, CSS, JavaScript,  RESTful Api's", 
+        "thumb": "/images/travel-thumb.jpg",
+        "labels": ["All", "Web Development"]
+    },
+    {
+        "title": "SmallFoods",
+        "description": "A layout exercise set by an acquaintance at a marketing agency.", 
+        "details": "Html, CSS, JavaScript", 
+        "thumb": "/images/smallfoods-thumb.jpg",
+        "labels": ["All", "Web Development"]
+    },
+    {
+        "title": "Orbit Coffee Table", 
+        "description": "A Coffee table designed to be able to pack flat for shipping.", 
+        "details": "Furniture Design", 
+        "thumb": "/images/orbit-thumb.jpg",
+        "labels": ["All","Furniture Design", "Industrial Design"]
+    },
+    {
+        "title": "Float Escape", 
+        "description": "An interior design project for a wellness treatment business.", 
+        "details": "Interior Design", 
+        "thumb": "/images/float-thumb.jpg",
+        "labels": ["All","Interior Design", "Industrial Design"]
+    },
+    {
+        "title": "DMZ", 
+        "description": "An reception design project for a tech incubartor in Toronto.", 
+        "details": "Interior Design", 
+        "thumb": "/images/dmz-thumb.jpg",
+        "labels": ["All","Interior Design", "Industrial Design"]
+    },
+    {
+        "title": "Boardgame Marketplace", 
+        "description": "Work in progress", 
+        "details": "React, Redux, RESTful Api, PostgreSQL", 
+        "thumb": "/images/boardgame-thumb.jpg",
+        "labels": ["All", "Web Development"]
+    },
+    {
+        "title": "Shobu", 
+        "description": "A two player abstract strategy game, designed to be a modern classic.", 
+        "details": "Boardgame Design", 
+        "thumb": "/images/shobu-thumb.jpg",
+        "labels": ["All", "Boardgame Development"]
+    },
+    {
+        "title": "Semantic Evaluator", 
+        "description": "Udemy Project to semantically evaluate text for url.", 
+        "details": "Html, Css, JavaScript, RESTful Api", 
+        "thumb": "/images/semantic-thumb.jpg",
+        "labels": ["All", "Web Development"]
+    },
+    {
+        "title": "Personal Portfolio", 
+        "description": "A static web page to present my accomplishments and projects so far.", 
+        "details": "Html, Css, JavaScript, React", 
+        "thumb": "/images/personal-thumb.jpg",
+        "labels": ["All", "Web Development"]
+        
+    }]
+}
+

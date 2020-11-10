@@ -2,11 +2,12 @@ import React from 'react';
 import classes from './ContactPage.module.scss';
 
 const ContactPage = () => {
+
     return (
         <div className={classes.container}>
             <div className={classes.landing}>
                 <h1 className={classes.title}>Contact me_</h1>
-                <p className={classes.landing_para}>Please feel free to reach out for any and all reasons, I am currently looking for employment as a jr developer but am open to any and all freelancing oportunities.</p>
+                <p className={classes.landing_para}>Please feel free to reach out, I am currently looking for employment as a jr developer but am open to any and all freelancing oportunities.</p>
                 <div className={classes.contact}>
                     <h2>Email:</h2>
                     <p>jamie.sajdak@gmail.com</p>

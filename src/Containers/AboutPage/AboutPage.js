@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './AboutPage.module.scss';
 import sandCastle from './sandcastle.jpg';
 import furniture from './furniture.jpg';
@@ -7,6 +7,15 @@ import computer from './computer.jpg';
 import road from './road.jpg';
 
 const AboutPage = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    });
+
     return (
         
         <div>

@@ -23,9 +23,9 @@ const NavItem = (props) => {
             pathName = '/projects';
             delayClass = classes.delayTwo;
              break;    
-        case 'technical skills':
+        case 'skills':
             icon = technicalIcon;
-            pathName = '/technical_skills';
+            pathName = '/skills';
             delayClass = classes.delayThree;
             break;   
         default:
