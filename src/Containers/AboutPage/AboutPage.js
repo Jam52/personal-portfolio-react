@@ -30,7 +30,7 @@ const AboutPage = () => {
                 </div>
             </div>
             
-            <div className={classes.section}>
+            <div className={[classes.section, classes.section___dark].join(' ')}>
                 <div className={classes.section_paragraph} >
                     <h3 className={classes.section_subtitle}>Begin at the begining</h3>
                 
@@ -47,7 +47,7 @@ const AboutPage = () => {
                 </div>
                 
             </div>
-            <div className={[classes.section, classes.section___dark].join(' ')}>
+            <div className={classes.section}>
                 <div className={classes.section_paragraph} >
                     <h3 className={classes.section_subtitle}>My road to Code</h3>
                     <p>

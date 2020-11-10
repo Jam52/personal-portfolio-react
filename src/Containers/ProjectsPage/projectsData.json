@@ -53,12 +53,14 @@
         "description": "A two player abstract strategy game, designed to be a modern classic.", 
         "details": "Boardgame Design", 
         "thumb": "/images/shobu-thumb.jpg",
-        "labels": ["All", "Boardgame Development"]
+        "labels": ["All", "Boardgame Design"],
+        "images": ["/images/shobu-1.jpg", "/images/shobu-2.jpg", "/images/shobu-3.jpg"],
+        "fullDescription": ["Shobu was designed with my co-designer Manolis Vranas and published by Smirk and Dagger Games.", "As one of the first games we designed together set out to design a classic feeling game akin to chess, to this end we were very successful as it garnered amazing feedback on its release and selling out its first print run only a few short months."]
     },
     {
         "title": "Semantic Evaluator", 
-        "description": "Udemy Project to semantically evaluate text for url.", 
-        "details": "Html, Css, JavaScript, RESTful Api", 
+        "description": "Udacity project to semantically evaluate text/urls.", 
+        "details": "Html, CSS, JS, RESTful Api", 
         "thumb": "/images/semantic-thumb.jpg",
         "labels": ["All", "Web Development"]
     },

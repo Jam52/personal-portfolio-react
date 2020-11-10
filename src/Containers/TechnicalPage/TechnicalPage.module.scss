@@ -1,36 +1,26 @@
 @import '../../base';
 
 .landing {
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #fff;
-
-  &_para {
-    font-size: 1.2rem;
-    max-width: 60ch;
-    padding: 3rem 0;
-  }
+  color: #222;
 }
 
-.landing::before {
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -50vw;
-  bottom: 0;
-  width: 150vw;
-  overflow: hidden;
-  background-color: $colour-blue;
-  opacity: 0.75;
+.para {
+  font-size: 1.2rem;
+  max-width: 60ch;
+  padding: 2rem 0;
+  margin: 0;
+
+  &___dark {
+    color: #000;
+  }
 }
 
 .landing_title {
   font-size: 3rem;
-  padding: 3rem 0;
+  padding: 2rem 0 4rem 0;
   position: relative;
   color: #fff;
 }
@@ -41,15 +31,18 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -50vw;
+  left: -10vw;
   bottom: 0;
-  width: 150vw;
+  width: 110vw;
   overflow: hidden;
-  background-color: $colour-blue;
+  background-image: url('./torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .subHeader {
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
   font-size: 2rem;
 }
 
@@ -95,6 +88,26 @@
 }
 
 .education {
+  min-height: 100vh;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.education:before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  bottom: 0;
+  width: 150vw;
+  overflow: hidden;
+  background-color: $colour-red;
+  opacity: 0.2;
+}
+
+.education_cards {
   margin: auto;
   margin: 3rem 0;
   display: grid;
@@ -107,6 +120,7 @@
 @media (min-width: $media-break-point-tablet) {
   .skills {
     flex-direction: row;
+    margin-bottom: 6rem;
   }
 
   .skills_section + .skills_section {

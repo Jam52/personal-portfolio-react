@@ -4,7 +4,7 @@ import classes from './ProjectCard.module.scss';
 const ProjectCard = (props) => {
     
         return (
-            <div data-test="component-project-card" className={classes.card}>
+            <div data-test="component-project-card" className={classes.card} onClick={props.select}>
                 <div className={classes.card_inner}>
                     <div className={classes.card_front}>
                         <img data-test="card-image" src={process.env.PUBLIC_URL + props.project.thumb} alt={props.project.title}/>

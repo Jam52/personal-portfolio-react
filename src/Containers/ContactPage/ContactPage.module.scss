@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #fff;
+  color: #222;
 
   &_para {
     font-size: 1.2rem;
@@ -14,23 +14,9 @@
   }
 }
 
-.landing::before {
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -50vw;
-  bottom: 0;
-  width: 150vw;
-  overflow: hidden;
-  background-color: $colour-green;
-  opacity: 0.75;
-}
-
 .title {
   font-size: 3rem;
-  padding: 3rem 0;
+  padding: 2rem 0 4rem 0;
   position: relative;
   color: #fff;
 }
@@ -41,11 +27,14 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -50vw;
+  left: -10vw;
   bottom: 0;
-  width: 150vw;
+  width: 110vw;
   overflow: hidden;
-  background-color: $colour-green;
+  background-image: url('./torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .contact {

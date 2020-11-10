@@ -18,32 +18,32 @@
   }
 
   &_para {
-    color: #fff;
+    color: #222;
     font-size: 1.2rem;
     margin-bottom: 3rem;
     max-width: 50ch;
   }
 }
 
-.landing::before {
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -50vw;
-  bottom: 0;
-  width: 150vw;
-  overflow: hidden;
-  background-color: $colour-purple;
-  opacity: 0.75;
-}
+// .landing::before {
+//   z-index: -1;
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: -50vw;
+//   bottom: 0;
+//   width: 150vw;
+//   overflow: hidden;
+//   background-color: $colour-purple;
+//   opacity: 0.75;
+// }
 
 .title {
   font-size: 3rem;
   color: #ffffff;
   position: relative;
-  padding: 3rem 0;
+  padding: 2rem 0 4rem 0;
 }
 
 .title::before {
@@ -52,11 +52,15 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -50vw;
+  left: -10vw;
   bottom: 0;
-  width: 150vw;
+  width: 110vw;
   overflow: hidden;
-  background-color: $colour-purple;
+  // background-color: $colour-purple;
+  background-image: url('./torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .section {
