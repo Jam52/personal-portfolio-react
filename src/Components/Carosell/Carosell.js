@@ -1,17 +1,15 @@
 import React from 'react';
-import { CarouselProvider, Slider, Slide, DotGroup,} from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, Dot } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
- 
+import './carosel.css';
+
 class Carosell extends React.Component {
-
-  
-
-    
   render() {
+    const children = React.Children.toArray(this.props.children);
 
-   
-    const children =  React.Children.toArray(this.props.children) 
-
+    const dots = children.map((child, index) => {
+      return <Dot slide={index} />;
+    });
     return (
       <CarouselProvider
         naturalSlideWidth={1000}
@@ -20,14 +18,13 @@ class Carosell extends React.Component {
       >
         <Slider>
           {children.map((img, index) => {
-            return <Slide index={index}>{img}</Slide>
+            return <Slide index={index}>{img}</Slide>;
           })}
         </Slider>
-        <DotGroup/>
+        <div className="dot_container">{dots}</div>
       </CarouselProvider>
     );
   }
 }
 
 export default Carosell;
-
