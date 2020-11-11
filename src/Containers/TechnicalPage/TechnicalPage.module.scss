@@ -22,7 +22,7 @@
   font-size: 3rem;
   padding: 2rem 0 4rem 0;
   position: relative;
-  color: #fff;
+  color: #111;
 }
 
 .landing_title::before {
@@ -35,7 +35,7 @@
   bottom: 0;
   width: 110vw;
   overflow: hidden;
-  background-image: url('./torn-paper.png');
+  background-image: url('../../torn-paper.png');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

@@ -41,7 +41,7 @@
 
 .title {
   font-size: 3rem;
-  color: #ffffff;
+  color: #111;
   position: relative;
   padding: 2rem 0 4rem 0;
 }
@@ -57,7 +57,7 @@
   width: 110vw;
   overflow: hidden;
   // background-color: $colour-purple;
-  background-image: url('./torn-paper.png');
+  background-image: url('../../torn-paper.png');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

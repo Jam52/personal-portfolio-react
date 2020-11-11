@@ -20,7 +20,9 @@ class ProjectPage extends Component {
   };
 
   componentDidMount() {
-    this.setState({ projects: [...projectData.data] });
+    this.setState({
+      projects: [...projectData.data],
+    });
     window.scrollTo({
       top: 0,
       left: 0,

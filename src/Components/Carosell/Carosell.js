@@ -1,7 +1,7 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, Dot } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import './carosel.css';
+import './carosel.scss';
 
 class Carosell extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class Carosell extends React.Component {
     return (
       <CarouselProvider
         naturalSlideWidth={1000}
-        naturalSlideHeight={600}
+        naturalSlideHeight={500}
         totalSlides={React.Children.count(this.props.children)}
       >
         <Slider>

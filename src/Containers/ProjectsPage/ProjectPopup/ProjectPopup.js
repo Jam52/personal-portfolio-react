@@ -35,6 +35,20 @@ const ProjectPopup = (props) => {
           {data.fullDescription.map((para) => (
             <p>{para}</p>
           ))}
+          {data.github !== '' ? (
+            <div>
+              <p>
+                <a href={data.github} target="_blank" rel="noreferrer">
+                  View on Github!
+                </a>
+              </p>
+              <p>
+                <a href={data.hosted} target="_blank" rel="noreferrer">
+                  Hosted here!
+                </a>
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
     );

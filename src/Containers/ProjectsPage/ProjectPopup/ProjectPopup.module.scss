@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $colour-secondary;
+  background-color: #e7e7e7;
   width: 100vw;
   height: 100vh;
   transform: translateY(-110vh);
@@ -42,7 +42,7 @@
 
 .mainImg {
   position: relative;
-  top: 3rem;
+  top: 4.5rem;
   left: 0;
   width: 90vw;
   margin-left: 5vw;
@@ -68,6 +68,11 @@
   width: 80vw;
   background-color: $colour-primary;
   padding: 0.5rem 1rem;
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $colour-secondary;
+  }
   p {
     color: #fff;
     font-size: 0.8rem;
@@ -78,11 +83,15 @@
 @media (min-width: $media-break-point-tablet) {
   .mainImg {
     width: 60vw;
-    left: 10vw;
+    left: 5vw;
+    top: 3rem;
   }
   .details {
     width: 50vw;
     padding-left: 3rem;
+    a {
+      font-size: 1.2rem;
+    }
   }
 }
 
