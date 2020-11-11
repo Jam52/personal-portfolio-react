@@ -1,0 +1,129 @@
+@import '../../base';
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #222;
+}
+
+.para {
+  font-size: 1.2rem;
+  max-width: 60ch;
+  padding: 2rem 0;
+  margin: 0;
+
+  &___dark {
+    color: #000;
+  }
+}
+
+.landing_title {
+  font-size: 3rem;
+  padding: 2rem 0 4rem 0;
+  position: relative;
+  color: #111;
+}
+
+.landing_title::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  bottom: 0;
+  width: 110vw;
+  overflow: hidden;
+  background-image: url('../../torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.subHeader {
+  margin: 3rem 0 2rem 0;
+  font-size: 2rem;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+.skills_section {
+  background-color: $colour-primary;
+  opacity: 0.9;
+  box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+
+  &___backEnd {
+    background-color: $colour-dark-grey;
+  }
+
+  &___tools {
+    background-color: $colour-green;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  img {
+    margin-top: 1rem;
+    width: 80%;
+  }
+}
+
+.skills_section + .skills_section {
+  margin-top: 2rem;
+}
+
+.education {
+  min-height: 100vh;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.education:before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  bottom: 0;
+  width: 150vw;
+  overflow: hidden;
+  background-color: $colour-red;
+  opacity: 0.2;
+}
+
+.education_cards {
+  margin: auto;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .skills {
+    flex-direction: row;
+    margin-bottom: 6rem;
+  }
+
+  .skills_section + .skills_section {
+    margin: 0 0 0 2rem;
+  }
+}

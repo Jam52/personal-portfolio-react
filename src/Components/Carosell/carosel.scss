@@ -1,0 +1,21 @@
+@import '../../_base.scss';
+
+.dot_container {
+  margin-top: 1rem;
+}
+
+.carousel__dot {
+  width: 2rem;
+  height: 1rem;
+  background-color: $colour-secondary;
+  border: none;
+  border-radius: 2px;
+  &--selected {
+    height: 2rem;
+    background-color: $colour-grey;
+  }
+}
+
+.carousel__dot + .carousel__dot {
+  margin-left: 0.5rem;
+}
