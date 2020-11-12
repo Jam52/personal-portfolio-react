@@ -1,0 +1,171 @@
+{
+  "data": [
+    {
+      "title": "Madame Mimi's",
+      "description": "A static web application to expore cocktails.",
+      "details": "React, Redux, RESTful Api's",
+      "thumb": "/images/madame-mimis-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "fullDescription": [
+        "Built with React, Reduct and RESTful Api's",
+        "Jamie's wife Mia (Mimi) has a dream of opening a cocktail bar called Madame Mimi's.",
+        "Built as an exercise in React and an ode to that dream using cocktaildb.com API."
+      ],
+      "github": "https://github.com/Jam52/cocktail-app",
+      "hosted": "https://vigilant-minsky-54c7d5.netlify.app/",
+      "images": [
+        "/images/madam-mimis-1.jpg",
+        "/images/madam-mimis-2.jpg",
+        "/images/madam-mimis-3.jpg"
+      ]
+    },
+    {
+      "title": "Travel Planner",
+      "description": "Udacity Capstone Project - Travel planner.",
+      "details": "Html, CSS, JavaScript,  RESTful Api's",
+      "thumb": "/images/travel-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "github": "https://github.com/Jam52/FrontEnd-Capstone-TravelApp",
+      "hosted": "https://infinite-lowlands-79665.herokuapp.com/",
+      "images": [
+        "/images/travel-planner-1.jpg",
+        "/images/travel-planner-2.jpg"
+      ],
+      "fullDescription": [
+        "Technology used: HTML, SASS, JavaScript, Webpack",
+        "This was the final project for Udacity's front end web development certificate. Main features we were to implement were chaining together several API's in order to dynamically add information to the DOM and the simple node/express server."
+      ]
+    },
+    {
+      "title": "SmallFoods",
+      "description": "A layout exercise set by an acquaintance at a marketing agency.",
+      "details": "Html, CSS, JavaScript",
+      "thumb": "/images/smallfoods-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "github": "https://github.com/Jam52/small-foods__sample-project",
+      "hosted": "https://silly-mirzakhani-3b8f84.netlify.app/",
+      "fullDescription": [
+        "This project was set by an senior developer at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order for me to learn and improve.",
+        "Built in vanilla Html, CSS and JavaScript with attention to implementing BEM and WCAG2.0 standards."
+      ],
+      "images": ["/images/smallfoods-1.jpg", "/images/smallfoods-2.jpg"]
+    },
+    {
+      "title": "Orbit Coffee Table",
+      "description": "A Coffee table designed to be able to pack flat for shipping.",
+      "details": "Furniture Design",
+      "thumb": "/images/orbit-thumb.jpg",
+      "labels": ["All", "Furniture Design", "Industrial Design"],
+      "images": [
+        "/images/orbit-1.png",
+        "/images/orbit-2.png",
+        "/images/orbit-3.png",
+        "/images/orbit-4.jpg"
+      ],
+      "fullDescription": [
+        "The Orbit coffee table was the table that kicked off my father and my side business of high end furniture.",
+        "It was featured in many magazines and even on the tv show Bit Bang Theory. Made of steam bent walnut with a uv bonded glass top."
+      ],
+      "github": "",
+      "hosted": ""
+    },
+    {
+      "title": "Float Escape",
+      "description": "An interior design project for a wellness treatment business.",
+      "details": "Interior Design",
+      "thumb": "/images/float-thumb.jpg",
+      "labels": ["All", "Interior Design", "Industrial Design"],
+      "github": "",
+      "hosted": "",
+      "images": [
+        "/images/float-1.jpg",
+        "/images/float-2.jpg",
+        "/images/float-3.jpg"
+      ],
+      "fullDescription": [
+        "This project was to design a float therapy center. The aesthetic concept was for a modern clean design with a roman bath inspiration.",
+        "The main difficulty was implementing the design intent is a small space, as well as fitting all the required equipment and office areas in the floor plan.",
+        "Designed with lead designer Nino Pulsinelli at Pulsinelli Design."
+      ]
+    },
+    {
+      "title": "DMZ",
+      "description": "An reception design project for a tech incubartor in Toronto.",
+      "details": "Interior Design",
+      "thumb": "/images/dmz-thumb.jpg",
+      "labels": ["All", "Interior Design", "Industrial Design"],
+      "github": "",
+      "hosted": "",
+      "fullDescription": [
+        "The DMZ is a tech accelerator with an aim to help small tech startups helping them build great businesses. The design reflects the youthful community while creating a professional environment.",
+        "Designed with lead designer Nino Pulsinelli at Pulsinelli Design."
+      ],
+      "images": [
+        "/images/DMZ-1.jpg",
+        "/images/DMZ-2.jpg",
+        "/images/DMZ-3.jpg",
+        "/images/DMZ-4.jpg"
+      ]
+    },
+    {
+      "title": "Boardgame Marketplace",
+      "description": "Work in progress",
+      "details": "React, Redux, RESTful Api, PostgreSQL",
+      "thumb": "/images/boardgame-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "github": "",
+      "hosted": "",
+      "images": ["images/boardgame-1.jpg"],
+      "fullDescription": [
+        "Work in progress",
+        "The aim of this site is to create an easy platform to trade games using an innovative matching system rather then the traditional posting marketplace system."
+      ]
+    },
+    {
+      "title": "Shobu",
+      "description": "A two player abstract strategy game, designed to be a modern classic.",
+      "details": "Boardgame Design",
+      "thumb": "/images/shobu-thumb.jpg",
+      "labels": ["All", "Boardgame Design"],
+      "images": [
+        "/images/shobu-1.jpg",
+        "/images/shobu-2.jpg",
+        "/images/shobu-3.jpg"
+      ],
+      "fullDescription": [
+        "Shobu was designed with my co-designer Manolis Vranas and published by Smirk and Dagger Games.",
+        "As one of the first games we designed together set out to design a classic feeling game akin to chess, to this end we were very successful as it garnered amazing feedback on its release and selling out its first print run only a few short months."
+      ],
+      "github": "",
+      "hosted": ""
+    },
+    {
+      "title": "Semantic Evaluator",
+      "description": "Udacity project to semantically evaluate text/urls.",
+      "details": "Html, CSS, JS, RESTful Api",
+      "thumb": "/images/semantic-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "github": "https://github.com/Jam52/evaluate-news-nlp",
+      "hosted": "https://vast-anchorage-24801.herokuapp.com/",
+      "images": ["/images/semantic-1.jpg"],
+      "fullDescription": [
+        "Technology used: HTML, SASS, JavaScript, Webpack, RESTful API",
+        "This project is a single page web application, part of the Front End Web Development course from Udacity. It uses the semantic endpoint of aylien API to return the polarity and subjectivity of the text or URL given."
+      ]
+    },
+    {
+      "title": "Personal Portfolio",
+      "description": "A static web page to present my accomplishments and projects so far.",
+      "details": "Html, Css, JavaScript, React",
+      "thumb": "/images/personal-thumb.jpg",
+      "labels": ["All", "Web Development"],
+      "github": "https://github.com/Jam52/personal-portfolio-react",
+      "hosted": "https://www.jamiesajdak.com/",
+      "fullDescription": [
+        "Technology used: React",
+        "This personal portfolio website was an exercise to improve my knowledge of html, css and React. The main focus during the building of the app was on reactive layouts, getting to better grips with flex and grid, and diving into transitions and animations."
+      ],
+      "images": ["/images/personal-1.jpg", "/images/personal-2.jpg"]
+    }
+  ]
+}

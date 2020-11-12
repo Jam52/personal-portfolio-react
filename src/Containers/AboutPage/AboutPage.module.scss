@@ -1,9 +1,66 @@
 @import '../../base';
 
+.landing {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  &_intro {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 0;
+  }
+
+  &_para {
+    color: #222;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 50ch;
+  }
+}
+
+// .landing::before {
+//   z-index: -1;
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: -50vw;
+//   bottom: 0;
+//   width: 150vw;
+//   overflow: hidden;
+//   background-color: $colour-purple;
+//   opacity: 0.75;
+// }
+
 .title {
-  font-size: 2rem;
-  width: 50vw;
-  color: $colour-primary;
+  font-size: 3rem;
+  color: #111;
+  position: relative;
+  padding: 2rem 0 4rem 0;
+}
+
+.title::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  bottom: 0;
+  width: 110vw;
+  overflow: hidden;
+  // background-color: $colour-purple;
+  background-image: url('../../torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .section {
@@ -13,11 +70,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 3rem 0;
 }
 
 .section___dark::before {
+  z-index: -1;
   content: '';
   display: block;
   position: absolute;
@@ -30,6 +87,7 @@
 }
 
 .section_paragraph {
+  font-size: 1.1rem;
   max-width: 60ch;
   width: 100%;
 }
@@ -52,11 +110,11 @@
 
 .section_subtitle {
   color: $colour-primary;
+  font-size: 1.7rem;
 }
 
 .profile {
-  margin-bottom: 2rem;
-  width: 100%;
+  margin: 2rem 0;
   max-width: 15rem;
   height: 15rem;
   display: flex;
@@ -65,6 +123,7 @@
   border: 1px solid #000;
   border-radius: 50%;
   overflow: hidden;
+  background-color: #fff;
   img {
     width: 110%;
     padding: 0;
@@ -72,6 +131,15 @@
 }
 
 @media (min-width: $media-break-point-tablet) {
+  .landing_intro {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .profile {
+    margin: 0 3rem 0 0;
+  }
+
   .section {
     flex-direction: row;
     justify-content: space-between;
@@ -84,7 +152,7 @@
     height: 35vw;
   }
 
-  .section + .section + .section {
+  .section + .section {
     flex-direction: row-reverse;
 
     .section_images {
@@ -95,9 +163,5 @@
         z-index: -1;
       }
     }
-  }
-
-  .profile {
-    margin-right: 3rem;
   }
 }

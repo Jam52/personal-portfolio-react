@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import technicalIcon from './technicalSkills.svg';
 import aboutIcon from './aboutMe.svg';
 import contactIcon from './contactMe.svg';
+import pojectIcon from './projects.svg';
 import classes from './NavItem.module.scss';
+
 
 const NavItem = (props) => {
     let pathName = '/';
@@ -17,13 +19,13 @@ const NavItem = (props) => {
             delayClass = classes.delayOne;
             break;
         case 'projects':
-            icon = aboutIcon;
+            icon = pojectIcon;
             pathName = '/projects';
             delayClass = classes.delayTwo;
              break;    
-        case 'technical skills':
+        case 'skills':
             icon = technicalIcon;
-            pathName = '/technical_skills';
+            pathName = '/skills';
             delayClass = classes.delayThree;
             break;   
         default:

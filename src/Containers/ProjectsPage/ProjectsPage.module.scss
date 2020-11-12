@@ -1,0 +1,116 @@
+@import '../../base';
+
+.container {
+  padding-bottom: 4rem;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  padding: 2rem 0 4rem 0;
+  position: relative;
+  color: #111;
+}
+
+.title::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  bottom: 0;
+  width: 110vw;
+  background-image: url('../../torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.para {
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  color: #222;
+  max-width: 65ch;
+  margin-bottom: 3rem;
+}
+
+.cardContainer {
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.filter {
+  flex-grow: 1;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+.filter_form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-family: $font-title;
+    font-size: 1.5rem;
+    color: #222;
+  }
+}
+
+.filter_select {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: $colour-primary;
+}
+
+.filter_labelContainer {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.filter_label {
+  cursor: pointer;
+  display: flex;
+  background-color: $colour-primary;
+  color: #fff;
+  border-radius: 0.2rem;
+  p {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .filter_form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter_select {
+    margin: 0 0 0 2rem;
+    width: 15rem;
+  }
+}

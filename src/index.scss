@@ -1,5 +1,6 @@
 @import 'base';
-html {
+
+* {
   box-sizing: border-box;
 }
 
@@ -33,4 +34,10 @@ h6 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (min-width: $media-break-point-computer-large) {
+  html {
+    font-size: 32px;
+  }
 }
