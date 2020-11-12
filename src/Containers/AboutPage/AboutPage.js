@@ -70,7 +70,7 @@ const AboutPage = () => {
             including JavaScript, Java and Python.
           </p>
           <p>
-            I devided to take the plunge and leave my industrial design career
+            I decided to take the plunge and leave my industrial design career
             to study web development while looking after my young daughter.
           </p>
           <p>
