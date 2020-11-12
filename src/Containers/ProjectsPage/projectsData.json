@@ -21,7 +21,7 @@
     },
     {
       "title": "Travel Planner",
-      "description": "dacity Capstone Project - Travel planner.",
+      "description": "Udacity Capstone Project - Travel planner.",
       "details": "Html, CSS, JavaScript,  RESTful Api's",
       "thumb": "/images/travel-thumb.jpg",
       "labels": ["All", "Web Development"],
@@ -45,8 +45,8 @@
       "github": "https://github.com/Jam52/small-foods__sample-project",
       "hosted": "https://silly-mirzakhani-3b8f84.netlify.app/",
       "fullDescription": [
-        "Technology used: Html, CSS, JavaScript, BEM Standards, WCAG",
-        "This project was set by an acquaintance at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order to learn and improve. Built in vanilla Html, Sass and JavaScript with attention to implementing BEM and WCAG2.0 standards."
+        "This project was set by an senior developer at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order for me to learn and improve.",
+        "Built in vanilla Html, CSS and JavaScript with attention to implementing BEM and WCAG2.0 standards."
       ],
       "images": ["/images/smallfoods-1.jpg", "/images/smallfoods-2.jpg"]
     },
@@ -118,7 +118,7 @@
       "images": ["images/boardgame-1.jpg"],
       "fullDescription": [
         "Work in progress",
-        "The aim of this site is to create an easy platform to trade games using an inovative matching system rather then the traditional posting marketplace system."
+        "The aim of this site is to create an easy platform to trade games using an innovative matching system rather then the traditional posting marketplace system."
       ]
     },
     {
@@ -150,7 +150,7 @@
       "images": ["/images/semantic-1.jpg"],
       "fullDescription": [
         "Technology used: HTML, SASS, JavaScript, Webpack, RESTful API",
-        "This project is a single page web application, part of the Front End Web Development course from Udacity. It uses the semantic endpoint of aylien API to return the polarity and subjectivity of the data given."
+        "This project is a single page web application, part of the Front End Web Development course from Udacity. It uses the semantic endpoint of aylien API to return the polarity and subjectivity of the text or URL given."
       ]
     },
     {
