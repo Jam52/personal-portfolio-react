@@ -1,0 +1,85 @@
+@import '../../base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  padding: 2rem 0 4rem 0;
+  position: relative;
+  color: #111;
+}
+
+.title::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  bottom: 0;
+  width: 110vw;
+  background-image: url('../../torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.details {
+  margin: 0 0 3rem 0;
+  font-style: italic;
+  color: #666;
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  img {
+    height: 100%;
+  }
+}
+
+.mainImg {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin: 3rem 0;
+}
+
+.para {
+  max-width: 60ch;
+}
+
+.backButton {
+  padding: 0.8em 2em;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 100%;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $colour-primary;
+    color: #fff;
+  }
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .mainImg {
+    margin: 0;
+  }
+  .backButton {
+    width: 15rem;
+  }
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .mainImg {
+    width: 80%;
+  }
+}

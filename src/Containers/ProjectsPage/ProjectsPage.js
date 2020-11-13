@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classes from './ProjectsPage.module.scss';
 import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from './projectsData.json';
-import ProjectPopup from './ProjectPopup/ProjectPopup.js';
 
 class ProjectPage extends Component {
   state = {
@@ -36,7 +35,8 @@ class ProjectPage extends Component {
   };
 
   selectProjectHandler = (key) => {
-    this.setState({ selectedProject: key });
+    console.log(this.state.projects[key]);
+    this.props.history.push(`/project/${key}`);
   };
 
   removeProjectPopup = () => {
@@ -70,13 +70,6 @@ class ProjectPage extends Component {
       );
     });
 
-    const popup = (
-      <ProjectPopup
-        click={this.removeProjectPopup}
-        selectedProject={this.state.selectedProject}
-      />
-    );
-
     return (
       <div data-test="component-project-card" className={classes.container}>
         <div className={classes.landing}>
@@ -104,7 +97,6 @@ class ProjectPage extends Component {
           </div>
         </div>
         <div className={classes.cardContainer}>{projectCards}</div>
-        {popup}
       </div>
     );
   }
