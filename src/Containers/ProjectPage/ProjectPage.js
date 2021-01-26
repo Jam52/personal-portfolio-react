@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import Carosel from '../../Components/Carosell/Carosell';
+// import Carosel from '../../Components/Carosell/Carosell';
 import { useParams } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import projectsData from '../../Containers/ProjectsPage/projectsData.json';
 import classes from './ProjectPage.module.scss';
+import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel';
 
 const ProjectPage = () => {
   let { id } = useParams();
@@ -29,15 +30,7 @@ const ProjectPage = () => {
       <p className={classes.details}>{data.details}</p>
 
       <div className={classes.mainImg}>
-        <Carosel>
-          {data.images.map((image, index) => {
-            return (
-              <div key={index} className={classes.slide}>
-                <img src={image} alt=""></img>
-              </div>
-            );
-          })}
-        </Carosel>
+        <ImageCarousel urls={data.images} />
       </div>
       <div className={classes.description}>{description}</div>
       <button className={classes.backButton} onClick={() => history.goBack()}>

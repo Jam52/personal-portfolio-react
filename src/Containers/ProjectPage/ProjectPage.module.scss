@@ -23,7 +23,8 @@
 }
 
 .mainImg {
-  margin: 2rem 0;
+  position: relative;
+  padding: 2rem 0;
 }
 
 .description {
@@ -55,11 +56,5 @@
   }
   .backButton {
     width: 15rem;
-  }
-}
-
-@media (min-width: $media-break-point-computer-small) {
-  .mainImg {
-    width: 80%;
   }
 }

@@ -1,11 +1,10 @@
-@import '../../CSS/base';
+@import '../../base';
 
 .container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 70vmin;
-  min-height: 15rem;
+  height: 100%;
   margin: 0;
 }
 
@@ -22,7 +21,7 @@
     width: 4rem;
     cursor: pointer;
     &[aria-disabled='true'] {
-      opacity: 0.2;
+      opacity: 0.5;
     }
 
     &:hover {
@@ -42,26 +41,8 @@
 .slide {
   box-sizing: border-box;
   height: 100%;
-  object-fit: cover;
+  max-height: 85vh;
+  object-fit: contain;
   flex-shrink: 0;
   transition: all 0.3s;
-}
-
-@media (min-width: $media_tablet_landscape) {
-  .inner_container {
-    width: 80%;
-  }
-
-  .content > * {
-    transition: all 0.3s;
-    opacity: 0.3;
-
-    &:nth-child(2) {
-      opacity: 1;
-    }
-  }
-
-  // .content > * {
-  //   margin-left: 0.2%;
-  // }
 }

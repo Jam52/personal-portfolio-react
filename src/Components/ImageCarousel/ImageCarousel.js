@@ -1,13 +1,22 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './ImageCarousel.module.scss';
-import Spinner from '../Spinner/Spinner';
 import Slide from './Slide';
 
 const ImageCarousel = (props) => {
   const [state, setState] = useState({
-    imageUrls: [...props.urls],
+    imageUrls: [],
     direction: '',
   });
+
+  useEffect(() => {
+    setState({
+      imageUrls: [
+        props.urls[props.urls.length - 1],
+        ...props.urls,
+        props.urls[0],
+      ],
+    });
+  }, [props.urls]);
 
   const carouselRef = useRef(null);
 
@@ -81,31 +90,30 @@ const ImageCarousel = (props) => {
   };
 
   return (
-    <div data-testid="component-image-carousel">
-      <div className={styles.container}>
+    <div
+      data-testid="component-image-carousel"
+      className={styles.imageCarousel}
+    >
+      <div className={styles.container} data-testid="component-image-carousel">
         <div className={styles.inner_container} ref={carouselRef}>
-          {state.imageUrls.length > 0 ? (
-            <div
-              className={styles.content}
-              id="images"
-              style={{
-                width: `${state.imageUrls.length * 100}%`,
-                transform: `translateX(${`calc(-${
-                  100 / state.imageUrls.length
-                }% + ${translateMod}px)`})`,
-              }}
-              onTouchStart={(event) => handleTouchStart(event)}
-              onTouchMove={(event) => handleTouchMove(event)}
-              onTouchEnd={handleMoveEnd}
-              onMouseDown={(event) => handleMouseStart(event)}
-              onMouseMove={(event) => handleMouseMove(event)}
-              onMouseUp={handleMoveEnd}
-            >
-              {renderSlides}
-            </div>
-          ) : (
-            <Spinner />
-          )}
+          <div
+            className={styles.content}
+            id="images"
+            style={{
+              width: `${state.imageUrls.length * 100}%`,
+              transform: `translateX(${`calc(-${
+                100 / state.imageUrls.length
+              }% + ${translateMod}px)`})`,
+            }}
+            onTouchStart={(event) => handleTouchStart(event)}
+            onTouchMove={(event) => handleTouchMove(event)}
+            onTouchEnd={handleMoveEnd}
+            onMouseDown={(event) => handleMouseStart(event)}
+            onMouseMove={(event) => handleMouseMove(event)}
+            onMouseUp={handleMoveEnd}
+          >
+            {renderSlides}
+          </div>
         </div>
       </div>
       <div className={styles.arrows}>
