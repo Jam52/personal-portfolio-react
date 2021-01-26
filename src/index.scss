@@ -31,6 +31,10 @@ h6 {
   font-family: $font-title;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -38,6 +42,6 @@ code {
 
 @media (min-width: $media-break-point-computer-large) {
   html {
-    font-size: 32px;
+    font-size: 1.5rem;
   }
 }

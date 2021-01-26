@@ -2,15 +2,18 @@
 
 .header {
   width: 90vw;
-  text-align: center;
-  //   position: relative;
-  //   //   transform: translateY(-50%);
-  //   //   top: 50%;
+  text-align: start;
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: $media-break-point-tablet) {
   .header {
-    text-align: start;
     width: 60rem;
+    h1 {
+      font-size: 3.5rem;
+    }
   }
 }

@@ -1,21 +1,20 @@
 import React, { useEffect } from 'react';
 import classes from './TechnicalPage.module.scss';
 import EducationTile from './EducationTile/EducationTile';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 const TechnicalPage = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth',
     });
   });
 
   return (
     <div className={classes.container}>
-      <div className={classes.landing}>
-        <h1 className={classes.landing_title}>Skills & Education_</h1>
-      </div>
+      <Header text="Skills" />
       <p className={[classes.para, classes.para___dark].join(' ')}>
         Below is the ever growing list of web development technology and tools I
         have been studying and working with.
@@ -112,6 +111,7 @@ const TechnicalPage = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

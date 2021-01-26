@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import classes from './AboutPage.module.scss';
 import sandCastle from './sandcastle.jpg';
 import furniture from './furniture.jpg';
@@ -11,25 +13,22 @@ const AboutPage = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth',
     });
   });
 
   return (
-    <div>
-      <div className={classes.landing}>
-        <h1 className={classes.title}>About me_</h1>
-        <div className={classes.landing_intro}>
-          <div className={classes.profile}>
-            <img src={profilePic} alt="jamie photograph"></img>
-          </div>
-          <p className={classes.landing_para}>
-            "Hi, thank you for checking out my portfolio site! I am an aspiring
-            web developer, formerly industrial designer, with a passion for
-            building things. Please scroll down for a little more about me and
-            my journey so far."
-          </p>
+    <div className={classes.landing}>
+      <Header text="About me" />
+      <div className={classes.landing_intro}>
+        <div className={classes.profile}>
+          <img src={profilePic} alt="jamie photograph"></img>
         </div>
+        <p className={classes.landing_para}>
+          "Hi, thank you for checking out my portfolio site! I am an aspiring
+          web developer, formerly industrial designer, with a passion for
+          building things. Please scroll down for a little more about me and my
+          journey so far."
+        </p>
       </div>
 
       <div className={classes.section}>
@@ -86,6 +85,7 @@ const AboutPage = () => {
           <img src={road} alt="road"></img>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

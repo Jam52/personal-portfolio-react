@@ -1,9 +1,10 @@
 .App {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 .page {
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .landingPage {

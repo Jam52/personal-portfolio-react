@@ -1,0 +1,31 @@
+@import '../../base';
+
+.header {
+  font-size: 2rem;
+  color: #111;
+  position: relative;
+  padding: 1.5rem 0 3rem 0;
+}
+
+.header::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10vw;
+  bottom: 0;
+  width: 110vw;
+  overflow: hidden;
+  background-image: url('../../torn-paper.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .header {
+    font-size: 3rem;
+    padding: 2rem 0 4rem 0;
+  }
+}
