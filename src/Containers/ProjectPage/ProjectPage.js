@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Carosel from '../../Components/Carosell/Carosell';
 import { useParams } from 'react-router-dom';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import projectsData from '../../Containers/ProjectsPage/projectsData.json';
 import classes from './ProjectPage.module.scss';
 
@@ -18,16 +20,13 @@ const ProjectPage = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth',
     });
   });
 
   return (
     <div className={classes.container}>
-      <div className={classes.title}>
-        <h1>{data.title}</h1>
-        <p className={classes.details}>{data.details}</p>
-      </div>
+      <Header text={data.title} />
+      <p className={classes.details}>{data.details}</p>
 
       <div className={classes.mainImg}>
         <Carosel>
@@ -44,6 +43,7 @@ const ProjectPage = () => {
       <button className={classes.backButton} onClick={() => history.goBack()}>
         Back
       </button>
+      <Footer />
     </div>
   );
 };

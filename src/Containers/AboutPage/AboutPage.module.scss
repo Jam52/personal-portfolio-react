@@ -27,29 +27,6 @@
   }
 }
 
-.title {
-  font-size: 3rem;
-  color: #111;
-  position: relative;
-  padding: 2rem 0 4rem 0;
-}
-
-.title::before {
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -10vw;
-  bottom: 0;
-  width: 110vw;
-  overflow: hidden;
-  background-image: url('../../torn-paper.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-}
-
 .section {
   box-sizing: border-box;
   position: relative;
@@ -58,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
+  margin-bottom: 8rem;
 }
 
 .section_paragraph {

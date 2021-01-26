@@ -19,7 +19,6 @@ body {
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-position: 0px 0px;
-  background-color: #eee;
 }
 
 h1,
@@ -43,6 +42,6 @@ code {
 
 @media (min-width: $media-break-point-computer-large) {
   html {
-    font-size: 32px;
+    font-size: 1.5rem;
   }
 }

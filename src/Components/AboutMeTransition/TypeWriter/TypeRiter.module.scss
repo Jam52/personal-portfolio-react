@@ -3,6 +3,10 @@
 .typeContainer {
   display: flex;
   align-items: flex-start;
+
+  h1 {
+    font-size: 1.5em;
+  }
 }
 
 .typewriter {
@@ -50,6 +54,11 @@
 }
 
 @media (min-width: $media-break-point-tablet) {
+  .typeContainer {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
   .typewriter {
     font-size: 2rem;
     width: 0%;

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classes from './ProjectsPage.module.scss';
 import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from './projectsData.json';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 class ProjectPage extends Component {
   state = {
@@ -25,7 +27,6 @@ class ProjectPage extends Component {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth',
     });
   }
 
@@ -73,9 +74,7 @@ class ProjectPage extends Component {
     return (
       <div data-test="component-project-card" className={classes.container}>
         <div className={classes.landing}>
-          <h1 className={classes.title}>
-            <span>Projects</span>_
-          </h1>
+          <Header text="Projects" />
           <div className={classes.filter}>
             <p className={classes.para}>
               Please explore my projects below. You will find a selection of my
@@ -97,6 +96,7 @@ class ProjectPage extends Component {
           </div>
         </div>
         <div className={classes.cardContainer}>{projectCards}</div>
+        <Footer />
       </div>
     );
   }

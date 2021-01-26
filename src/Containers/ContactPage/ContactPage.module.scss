@@ -11,30 +11,12 @@
     font-size: 1.2rem;
     max-width: 60ch;
     padding: 3rem 0;
+    margin: 0;
   }
 }
 
-.title {
-  font-size: 3rem;
-  padding: 2rem 0 4rem 0;
-  position: relative;
-  color: #111;
-}
-
-.title::before {
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -10vw;
-  bottom: 0;
-  width: 110vw;
-  overflow: hidden;
-  background-image: url('../../torn-paper.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.details > * + * {
+  margin-top: 1rem;
 }
 
 .contact {
@@ -47,6 +29,9 @@
 }
 
 @media (min-width: $media-break-point-tablet) {
+  .details > * + * {
+    margin-top: 0.2rem;
+  }
   .contact {
     flex-direction: row;
     align-items: flex-end;
