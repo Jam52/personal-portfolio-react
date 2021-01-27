@@ -5,9 +5,16 @@
   color: #111;
   position: relative;
   padding: 1.5rem 0 3rem 0;
+  animation: typing 2s ease-out 0s 1;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.header::before {
+.container {
+  position: relative;
+}
+
+.container::before {
   z-index: -1;
   content: '';
   display: block;
@@ -21,6 +28,29 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+
+.blink {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @media (min-width: $media-break-point-tablet) {

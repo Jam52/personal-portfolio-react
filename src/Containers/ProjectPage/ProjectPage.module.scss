@@ -22,13 +22,33 @@
   }
 }
 
-.mainImg {
-  position: relative;
-  padding: 2rem 0;
+.description {
+  margin: 2rem 0;
 }
 
-.description {
-  margin: 3rem 0;
+.links {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  font-family: $font-title;
+  font-size: 1.4rem;
+  a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: $colour-secondary;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.links > * + * {
+  margin-left: 2rem;
+}
+
+.gif {
+  width: 90%;
+  min-height: 15rem;
+  border: 1px solid black;
 }
 
 .para {
@@ -42,7 +62,7 @@
   width: 100%;
   font-size: 1.2rem;
   transition: background-color 0.2s;
-  margin-bottom: 8rem;
+  margin: 3rem 0 8rem;
 
   &:hover {
     background-color: $colour-primary;

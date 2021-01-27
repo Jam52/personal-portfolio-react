@@ -13,11 +13,7 @@
       ],
       "github": "https://github.com/Jam52/cocktail-app",
       "hosted": "https://vigilant-minsky-54c7d5.netlify.app/",
-      "images": [
-        "/images/madam-mimis-1.jpg",
-        "/images/madam-mimis-2.jpg",
-        "/images/madam-mimis-3.jpg"
-      ]
+      "gif": "/images/madamemimi_gif.gif"
     },
     {
       "title": "Travel Planner",
@@ -26,14 +22,11 @@
       "thumb": "/images/travel-thumb.jpg",
       "labels": ["All", "Web Development"],
       "github": "https://github.com/Jam52/FrontEnd-Capstone-TravelApp",
-      "hosted": "https://infinite-lowlands-79665.herokuapp.com/",
-      "images": [
-        "/images/travel-planner-1.jpg",
-        "/images/travel-planner-2.jpg"
-      ],
+      "hosted": "https://600a8fb2703b620007b3d11e--awesome-newton-11cf39.netlify.app/#/",
+      "gif": "/images/travel.gif",
       "fullDescription": [
         "Technology used: HTML, SASS, JavaScript, Webpack",
-        "This was the final project for Udacity's front end web development certificate. Main features we were to implement were chaining together several API's in order to dynamically add information to the DOM and the simple node/express server."
+        "This was the final project for Udacity's front end web development certificate. Main features are chaining together several API's in order to dynamically fetch data in the form of images and weather data, POST the data to the node/express serve and in turn update the UI."
       ]
     },
     {
@@ -48,7 +41,7 @@
         "This project was set by an senior developer at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order for me to learn and improve.",
         "Built in vanilla Html, CSS and JavaScript with attention to implementing BEM and WCAG2.0 standards."
       ],
-      "images": ["/images/smallfoods-1.jpg", "/images/smallfoods-2.jpg"]
+      "gif": "/images/smartfoods.gif"
     },
     {
       "title": "Orbit Coffee Table",
@@ -70,11 +63,29 @@
       "hosted": ""
     },
     {
+      "title": "Summit Coffee Table",
+      "description": "An exersise to create a design using a single repeated form.",
+      "details": "Furniture Design",
+      "thumb": "/images/summit-thumb.jpg",
+      "labels": ["All", "Furniture Design", "Industrial Design"],
+      "images": [
+        "/images/summit-1.jpg",
+        "/images/summit-2.jpg",
+        "/images/summit-3.jpg"
+      ],
+      "fullDescription": [
+        "The summit table was designed around a single repeated form. This creates a beautiful repeated geomatry but also allows for mass manufacture.",
+        "Made with laminated walnut vaneer with a UV bonded glass top."
+      ],
+      "github": "",
+      "hosted": ""
+    },
+    {
       "title": "Float Escape",
       "description": "An interior design project for a wellness treatment business.",
       "details": "Interior Design",
       "thumb": "/images/float-thumb.jpg",
-      "labels": ["All", "Interior Design", "Industrial Design"],
+      "labels": ["All", "Interior Design"],
       "github": "",
       "hosted": "",
       "images": [
@@ -93,7 +104,7 @@
       "description": "An reception design project for a tech incubartor in Toronto.",
       "details": "Interior Design",
       "thumb": "/images/dmz-thumb.jpg",
-      "labels": ["All", "Interior Design", "Industrial Design"],
+      "labels": ["All", "Interior Design"],
       "github": "",
       "hosted": "",
       "fullDescription": [
@@ -108,14 +119,33 @@
       ]
     },
     {
+      "title": "Move",
+      "description": "A bouteque womens fitness studio.",
+      "details": "Interior Design",
+      "thumb": "/images/move-thumb.jpg",
+      "labels": ["All", "Interior Design"],
+      "github": "",
+      "hosted": "",
+      "fullDescription": [
+        "Move is a boutique womens fitness studio in Toronto's east side. A unique studio with an emphasis on strength.",
+        "Designed with lead designer Nino Pulsinelli at Pulsinelli Design."
+      ],
+      "images": [
+        "/images/move-2.jpg",
+        "/images/move-3.jpg",
+        "/images/move-4.jpg",
+        "/images/move-5.jpg"
+      ]
+    },
+    {
       "title": "Boardgame Marketplace",
       "description": "Work in progress",
       "details": "React, Redux, RESTful Api, PostgreSQL",
       "thumb": "/images/boardgame-thumb.jpg",
       "labels": ["All", "Web Development"],
-      "github": "",
+      "github": "https://github.com/Jam52/board-game-marketplace",
       "hosted": "",
-      "images": ["images/boardgame-1.jpg"],
+      "gif": "/images/boardgame.gif",
       "fullDescription": [
         "Work in progress",
         "The aim of this site is to create an easy platform to trade games using an innovative matching system rather then the traditional posting marketplace system."
@@ -140,17 +170,18 @@
       "hosted": ""
     },
     {
-      "title": "Semantic Evaluator",
-      "description": "Udacity project to semantically evaluate text/urls.",
-      "details": "Html, CSS, JS, RESTful Api",
-      "thumb": "/images/semantic-thumb.jpg",
+      "title": "The Edward",
+      "description": "A static front end website for an small hospitality business.",
+      "details": "Html, CSS, JS, RESTful Api, React",
+      "thumb": "/images/theEdwardLogo.jpg",
       "labels": ["All", "Web Development"],
       "github": "https://github.com/Jam52/evaluate-news-nlp",
       "hosted": "https://vast-anchorage-24801.herokuapp.com/",
-      "images": ["/images/semantic-1.jpg"],
+      "gif": "/images/edward_gif.gif",
       "fullDescription": [
         "Technology used: HTML, SASS, JavaScript, Webpack, RESTful API",
-        "This project is a single page web application, part of the Front End Web Development course from Udacity. It uses the semantic endpoint of aylien API to return the polarity and subjectivity of the text or URL given."
+        "This project is a single page web application for a small hosptality buiness located in Picton, ON called The Edward. They needed a simple site for curstomers to explore their various accomations, view potential booking dates and proceed with booking.",
+        "The site is intergrated with Lodgify.com's back end API's to fetch images, property details and availabilities."
       ]
     },
     {
@@ -165,7 +196,26 @@
         "Technology used: React",
         "This personal portfolio website was an exercise to improve my knowledge of html, css and React. The main focus during the building of the app was on reactive layouts, getting to better grips with flex and grid, and diving into transitions and animations."
       ],
-      "images": ["/images/personal-1.jpg", "/images/personal-2.jpg"]
+      "gif": "/images/personal.gif"
+    },
+    {
+      "title": "Jordan / Gatorade",
+      "description": "A shop in shop pop up cross brand experiance.",
+      "details": "Industrial Design",
+      "thumb": "/images/jordan-thumb.jpg",
+      "labels": ["All", "Interior Design", "Industrial Design"],
+      "github": "",
+      "hosted": "",
+      "fullDescription": [
+        "This project was a cross branch promotional experiance in the Toronto Jordan location.",
+        "Designed with lead designer Nino Pulsinelli at Pulsinelli Design."
+      ],
+      "images": [
+        "/images/jordan-1.jpg",
+        "/images/jordan-2.jpg",
+        "/images/jordan-3.jpg",
+        "/images/jordan-4.jpg"
+      ]
     }
   ]
 }

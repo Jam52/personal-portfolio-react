@@ -27,15 +27,25 @@ const ProjectPage = () => {
   return (
     <div className={classes.container}>
       <Header text={data.title} />
-      <p className={classes.details}>{data.details}</p>
+      <main>
+        <div className={classes.description}>{description}</div>
+        {data.gif ? (
+          <img className={classes.gif} src={data.gif} alt="" />
+        ) : (
+          <ImageCarousel urls={data.images} />
+        )}
+        {data.github ? (
+          <div className={classes.links}>
+            <a href={data.github}>View On Github</a>
+            <a href={data.hosted}>View live</a>
+          </div>
+        ) : null}
 
-      <div className={classes.mainImg}>
-        <ImageCarousel urls={data.images} />
-      </div>
-      <div className={classes.description}>{description}</div>
-      <button className={classes.backButton} onClick={() => history.goBack()}>
-        Back
-      </button>
+        <button className={classes.backButton} onClick={() => history.goBack()}>
+          Back
+        </button>
+      </main>
+
       <Footer />
     </div>
   );
