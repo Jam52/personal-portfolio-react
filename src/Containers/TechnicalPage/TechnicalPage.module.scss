@@ -1,24 +1,14 @@
 @import '../../CSS/base';
 
 .container {
-  position: relative;
-}
-.landing {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #222;
+  --gap: 5rem;
 }
 
-.para {
+.intro {
   font-size: 1.2rem;
   max-width: 60ch;
   padding: 0;
   margin-top: 4rem;
-
-  &___dark {
-    color: #000;
-  }
 }
 
 .subHeader {
@@ -26,24 +16,15 @@
 }
 
 .skills {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 0;
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 4rem;
-}
-
-.skills_section {
-  background-color: #fff;
-  opacity: 0.9;
+  --gap: 2rem;
+  background-color: $colour-light-grey;
   box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #000;
   padding: 2rem 0;
-  border: 1.5px solid #000;
+  border-radius: 0.5rem;
 
   ul {
     list-style: none;
@@ -57,13 +38,7 @@
   }
 }
 
-.skills_section + .skills_section {
-  margin-top: 2rem;
-}
-
 .education {
-  min-height: 100vh;
-  padding-bottom: 9rem;
   position: relative;
 }
 
@@ -75,14 +50,4 @@
   grid-template-rows: auto;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
-}
-
-@media (min-width: $media-break-point-tablet) {
-  .skills {
-    flex-direction: row;
-  }
-
-  .skills_section + .skills_section {
-    margin: 0 0 0 2rem;
-  }
 }
