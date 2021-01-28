@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import projectsData from '../../Containers/ProjectsPage/projectsData.json';
 import classes from './ProjectPage.module.scss';
-import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel';
+// import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel';
+import Carousel from '../../Components/Carousel/Carousel';
 import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 const ProjectPage = () => {
@@ -34,7 +35,7 @@ const ProjectPage = () => {
               <img src={data.gif} alt="" />
             </div>
           ) : (
-            <ImageCarousel urls={data.images} />
+            <Carousel urls={data.images} />
           )}
           {data.github ? (
             <div className={classes.links}>
@@ -47,7 +48,7 @@ const ProjectPage = () => {
             className={classes.backButton}
             onClick={() => history.goBack()}
           >
-            Back
+            Back to Projects
           </button>
         </main>
       </FadeInTransition>

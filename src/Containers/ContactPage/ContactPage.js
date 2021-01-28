@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './ContactPage.module.scss';
 import Header from '../../Components/Header/Header';
 import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    });
+  });
   return (
     <div>
       <Header text="Contact me" />

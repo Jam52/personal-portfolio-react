@@ -18,12 +18,13 @@ body {
   background-image: url('./background.png');
   background-attachment: fixed;
   background-repeat: repeat-y;
-  background-position: 100% 0;
+  background-position: 80% 0;
   background-size: 200%;
 }
 
 @media (min-width: $media-break-point-computer-small) {
   body {
+    background-position: 100% 0;
     background-size: 100%;
   }
 }

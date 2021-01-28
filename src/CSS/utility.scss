@@ -53,6 +53,20 @@
   margin-top: var(--gap, $spacer);
 }
 
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: $colour-secondary;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+  &:disabled {
+    box-shadow: 0 0 0 3pt $colour-secondary;
+    opacity: 1;
+  }
+}
+
 @media (min-width: $media-break-point-tablet) {
   .split {
     flex-direction: row;
