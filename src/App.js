@@ -8,6 +8,7 @@ import ProjectsPage from './Containers/ProjectsPage/ProjectsPage';
 import ContactPage from './Containers/ContactPage/ContactPage';
 import TechnicalPage from './Containers/TechnicalPage/TechnicalPage';
 import ProjectPage from './Containers/ProjectPage/ProjectPage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
               </div>
             </Route>
           </Switch>
-
+          <Footer />
           <MobileNav />
           <MainNav />
         </div>
