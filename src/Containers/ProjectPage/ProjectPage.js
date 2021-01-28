@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-// import Carosel from '../../Components/Carosell/Carosell';
 import { useParams } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
 import projectsData from '../../Containers/ProjectsPage/projectsData.json';
 import classes from './ProjectPage.module.scss';
-import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel';
+// import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel';
+import Carousel from '../../Components/Carousel/Carousel';
+import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 const ProjectPage = () => {
   let { id } = useParams();
@@ -25,28 +25,33 @@ const ProjectPage = () => {
   });
 
   return (
-    <div className={classes.container}>
+    <div>
       <Header text={data.title} />
-      <main>
-        <div className={classes.description}>{description}</div>
-        {data.gif ? (
-          <img className={classes.gif} src={data.gif} alt="" />
-        ) : (
-          <ImageCarousel urls={data.images} />
-        )}
-        {data.github ? (
-          <div className={classes.links}>
-            <a href={data.github}>View On Github</a>
-            <a href={data.hosted}>View live</a>
-          </div>
-        ) : null}
+      <FadeInTransition>
+        <main className={`container control-flow-vert ${classes.container}`}>
+          <div className={classes.description}>{description}</div>
+          {data.gif ? (
+            <div className={classes.gif}>
+              <img src={data.gif} alt="" />
+            </div>
+          ) : (
+            <Carousel urls={data.images} />
+          )}
+          {data.github ? (
+            <div className={classes.links}>
+              <a href={data.github}>View On Github</a>
+              <a href={data.hosted}>View live</a>
+            </div>
+          ) : null}
 
-        <button className={classes.backButton} onClick={() => history.goBack()}>
-          Back
-        </button>
-      </main>
-
-      <Footer />
+          <button
+            className={classes.backButton}
+            onClick={() => history.goBack()}
+          >
+            Back to Projects
+          </button>
+        </main>
+      </FadeInTransition>
     </div>
   );
 };

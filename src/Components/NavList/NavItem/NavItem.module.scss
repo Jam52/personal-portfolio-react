@@ -1,18 +1,20 @@
-@import '../../../base';
+@import '../../../CSS/base';
 
 .container {
   z-index: 1;
   display: flex;
   width: 100vw;
   height: 4rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #000;
+  background-color: $colour-primary;
+  border-radius: 0.5rem 0 0 0.5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: felx-start;
   text-decoration: none;
-  transform: translateX(-100vw);
+  transform: translateX(-70vw);
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+  margin-top: 1rem;
+  box-shadow: $shadow;
 
   img {
     height: 3rem;
@@ -23,13 +25,13 @@
   p {
     font-size: 1.3rem;
     margin-right: 1rem;
-    color: #000;
+    color: white;
     font-family: $font-title;
   }
 }
 
 .hidden {
-  transform: translateX(150vw);
+  transform: translateX(50vw);
 }
 
 .active {

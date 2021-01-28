@@ -1,22 +1,12 @@
-@import '../../base';
+@import '../../CSS/base';
 
-.landing {
-  box-sizing: border-box;
-  position: relative;
-  min-height: 90vh;
+.intro {
   display: flex;
   flex-direction: column;
-
-  &_intro {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 2rem 0;
-  }
-
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 0;
   &_para {
     color: #666;
     font-size: 1.3rem;
@@ -30,12 +20,10 @@
 .section {
   box-sizing: border-box;
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
-  margin-bottom: 8rem;
+  margin-top: 5rem;
 }
 
 .section_paragraph {
@@ -66,24 +54,16 @@
 }
 
 .profile {
-  margin: 2rem 0;
-  max-width: 15rem;
+  width: 15rem;
   height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000;
+  box-shadow: $shadow;
   border-radius: 50%;
-  overflow: hidden;
   background-color: #fff;
-  img {
-    width: 110%;
-    padding: 0;
-  }
+  object-fit: cover;
 }
 
 @media (min-width: $media-break-point-tablet) {
-  .landing_intro {
+  .intro {
     flex-direction: row;
     justify-content: start;
   }

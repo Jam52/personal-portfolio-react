@@ -1,26 +1,10 @@
-@import '../../base';
+@import '../../CSS/base';
 
 .landing {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #222;
-
-  &_para {
-    font-size: 1.2rem;
-    max-width: 60ch;
-    padding: 3rem 0;
-    margin: 0;
-  }
-}
-
-.details {
-  margin-bottom: 10rem;
-}
-
-.details > * + * {
-  margin-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 60ch;
+  padding: 5rem 0;
+  margin: 0;
 }
 
 .contact {
@@ -33,9 +17,6 @@
 }
 
 @media (min-width: $media-break-point-tablet) {
-  .details > * + * {
-    margin-top: 0.2rem;
-  }
   .contact {
     flex-direction: row;
     align-items: flex-end;

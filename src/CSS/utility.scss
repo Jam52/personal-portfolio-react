@@ -1,0 +1,85 @@
+@import './base';
+
+.container {
+  width: 90vw;
+  margin: auto;
+  max-width: 1500px;
+}
+
+.bg--light {
+  background-color: white;
+  color: black;
+}
+
+.bg--dark {
+  background-color: $colour-secondary;
+  color: #fff;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * {
+  flex-basis: 50%;
+}
+
+.split > * + * {
+  margin-top: var(--gap, $spacer);
+}
+
+.flow-vert > * + * {
+  margin-top: $spacer;
+}
+
+.flow-vert-sm > * + * {
+  margin-top: 0.3rem;
+}
+
+.flow-vert-lg > * + * {
+  margin-top: 3rem;
+}
+
+.flow > * + * {
+  margin: 0 0 0 $spacer;
+}
+
+.control-flow > * + * {
+  margin: 0 0 0 var(--gap, $spacer);
+}
+
+.control-flow-vert > * + * {
+  margin-top: var(--gap, $spacer);
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: $colour-secondary;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+  &:disabled {
+    box-shadow: 0 0 0 3pt $colour-secondary;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $media-break-point-tablet) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * + * {
+    margin-top: 0;
+    margin-left: var(--gap, $spacer);
+  }
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    width: 80vw;
+    margin: 0 15vw 0 5vw;
+  }
+}

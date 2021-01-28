@@ -1,4 +1,4 @@
-@import '../../base';
+@import '../../CSS/base';
 
 .container {
   z-index: 1;
@@ -12,14 +12,6 @@
   width: 0vw;
 }
 
-// @media (min-width: $media-break-point-phone) {
-//   .container {
-//     width: 50vw;
-//   }
-// }
-
-// @media (min-width: $media-break-point-computer-small) {
-//   .container {
-//     width: 20rem;
-//   }
-// }
+.conatiner > * + * {
+  margin-top: 0.5rem;
+}

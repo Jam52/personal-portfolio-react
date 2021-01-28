@@ -3,7 +3,7 @@ import classes from './ProjectsPage.module.scss';
 import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from './projectsData.json';
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 class ProjectPage extends Component {
   state = {
@@ -72,11 +72,11 @@ class ProjectPage extends Component {
     });
 
     return (
-      <div data-test="component-project-card" className={classes.container}>
-        <div className={classes.landing}>
-          <Header text="Projects" />
-          <div className={classes.filter}>
-            <p className={classes.para}>
+      <div data-test="component-project-card">
+        <Header text="Projects" />
+        <FadeInTransition>
+          <main className="container">
+            <p className={classes.intro}>
               Please explore my projects below. You will find a selection of my
               web development projects so far, projects from my
               industrial/interior design career and personal projects that I am
@@ -93,10 +93,10 @@ class ProjectPage extends Component {
                 {labels}
               </select>
             </form>
-          </div>
-        </div>
-        <div className={classes.cardContainer}>{projectCards}</div>
-        <Footer />
+
+            <div className={classes.cardContainer}>{projectCards}</div>
+          </main>
+        </FadeInTransition>
       </div>
     );
   }

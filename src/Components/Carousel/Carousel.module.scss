@@ -1,0 +1,9 @@
+@import '../../CSS/base';
+
+.dots {
+  margin: 1rem 0 2rem 0;
+}
+
+.dots > * + * {
+  margin-left: 2rem;
+}
