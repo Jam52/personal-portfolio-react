@@ -111,12 +111,7 @@
         "The DMZ is a tech accelerator with an aim to help small tech startups helping them build great businesses. The design reflects the youthful community while creating a professional environment.",
         "Designed with lead designer Nino Pulsinelli at Pulsinelli Design."
       ],
-      "images": [
-        "/images/DMZ-1.jpg",
-        "/images/DMZ-2.jpg",
-        "/images/DMZ-3.jpg",
-        "/images/DMZ-4.jpg"
-      ]
+      "images": ["/images/DMZ-1.jpg", "/images/DMZ-2.jpg", "/images/DMZ-4.jpg"]
     },
     {
       "title": "Move",
