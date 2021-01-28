@@ -1,19 +1,18 @@
 import React from 'react';
 import classes from './ContactPage.module.scss';
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
 
 const ContactPage = () => {
   return (
-    <div className={classes.container}>
-      <div className={classes.landing}>
-        <Header text="Contact me" />
-        <p className={classes.landing_para}>
+    <div>
+      <Header text="Contact me" />
+      <main className="container">
+        <p className={classes.landing}>
           Please feel free to reach out, I am currently looking for employment
           as a junior developer but am open to any and all freelancing
           opportunities.
         </p>
-        <div className={classes.details}>
+        <div className={`${classes.details} flow-vert`}>
           <div className={classes.contact}>
             <h2>Email:</h2>
             <p>jamie.sajdak@gmail.com</p>
@@ -27,9 +26,7 @@ const ContactPage = () => {
             <p>Toronto, ON</p>
           </div>
         </div>
-
-        <Footer />
-      </div>
+      </main>
     </div>
   );
 };
