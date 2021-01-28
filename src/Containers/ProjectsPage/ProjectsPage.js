@@ -72,31 +72,29 @@ class ProjectPage extends Component {
     });
 
     return (
-      <div data-test="component-project-card" className={classes.container}>
-        <div className={classes.landing}>
-          <Header text="Projects" />
-          <div className={classes.filter}>
-            <p className={classes.para}>
-              Please explore my projects below. You will find a selection of my
-              web development projects so far, projects from my
-              industrial/interior design career and personal projects that I am
-              particularly proud of.
-            </p>
-            <form className={classes.filter_form}>
-              <label for="dropdown">Filter By Category</label>
-              <select
-                className={classes.filter_select}
-                onChange={(event) => {
-                  this.onSelectChangeHandeler(event);
-                }}
-              >
-                {labels}
-              </select>
-            </form>
-          </div>
-        </div>
-        <div className={classes.cardContainer}>{projectCards}</div>
-        <Footer />
+      <div data-test="component-project-card">
+        <Header text="Projects" />
+        <main className="container">
+          <p className={classes.intro}>
+            Please explore my projects below. You will find a selection of my
+            web development projects so far, projects from my
+            industrial/interior design career and personal projects that I am
+            particularly proud of.
+          </p>
+          <form className={classes.filter_form}>
+            <label for="dropdown">Filter By Category</label>
+            <select
+              className={classes.filter_select}
+              onChange={(event) => {
+                this.onSelectChangeHandeler(event);
+              }}
+            >
+              {labels}
+            </select>
+          </form>
+
+          <div className={classes.cardContainer}>{projectCards}</div>
+        </main>
       </div>
     );
   }

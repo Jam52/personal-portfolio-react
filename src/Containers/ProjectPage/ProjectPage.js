@@ -25,9 +25,9 @@ const ProjectPage = () => {
   });
 
   return (
-    <div className={classes.container}>
+    <div>
       <Header text={data.title} />
-      <main>
+      <main className="container">
         <div className={classes.description}>{description}</div>
         {data.gif ? (
           <img className={classes.gif} src={data.gif} alt="" />
@@ -45,8 +45,6 @@ const ProjectPage = () => {
           Back
         </button>
       </main>
-
-      <Footer />
     </div>
   );
 };

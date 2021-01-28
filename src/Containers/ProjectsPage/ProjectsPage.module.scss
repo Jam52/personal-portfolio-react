@@ -1,17 +1,6 @@
 @import '../../CSS/base';
 
-.container {
-  padding-bottom: 4rem;
-  position: relative;
-}
-
-.landing {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.para {
+.intro {
   margin: 4rem 0 4rem 0;
   padding: 0;
   font-size: 1.2rem;
@@ -27,18 +16,6 @@
   grid-template-rows: auto;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
-  margin-bottom: 8rem;
-}
-
-.filter {
-  flex-grow: 1;
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
 }
 
 .filter_form {
@@ -59,27 +36,6 @@
   font-size: 1.1rem;
   color: #000;
   background-color: #fff;
-}
-
-.filter_labelContainer {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-template-rows: auto;
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
-}
-
-.filter_label {
-  cursor: pointer;
-  display: flex;
-  background-color: $colour-primary;
-  color: #fff;
-  border-radius: 0.2rem;
-  p {
-    margin-left: 1rem;
-    font-size: 0.8rem;
-  }
 }
 
 @media (min-width: $media-break-point-tablet) {
