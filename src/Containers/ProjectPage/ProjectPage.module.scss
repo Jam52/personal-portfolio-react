@@ -6,6 +6,10 @@
   color: #666;
 }
 
+.container {
+  --gap: 3rem;
+}
+
 .slide {
   height: 100%;
   display: flex;

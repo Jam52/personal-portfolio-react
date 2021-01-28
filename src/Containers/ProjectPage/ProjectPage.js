@@ -27,7 +27,7 @@ const ProjectPage = () => {
     <div>
       <Header text={data.title} />
       <FadeInTransition>
-        <main className="container">
+        <main className={`container control-flow-vert ${classes.container}`}>
           <div className={classes.description}>{description}</div>
           {data.gif ? (
             <div className={classes.gif}>

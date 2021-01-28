@@ -21,13 +21,18 @@ function App() {
             <Route path="/contact" component={ContactPage} />
             <Route path="/skills" component={TechnicalPage} />
             <Route path="/project/:id" component={ProjectPage} />
-            <Route path="/">
-              <div className="landingPage">
+          </Switch>
+          <Switch>
+            <Route exact path="/">
+              <div className="landingPage container">
                 <AboutMeTransition />
               </div>
             </Route>
+            <Route path="/">
+              <Footer />
+            </Route>
           </Switch>
-          <Footer />
+
           <MobileNav />
           <MainNav />
         </div>
