@@ -3,7 +3,7 @@ import classes from './ProjectsPage.module.scss';
 import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from './projectsData.json';
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 class ProjectPage extends Component {
   state = {
@@ -74,27 +74,29 @@ class ProjectPage extends Component {
     return (
       <div data-test="component-project-card">
         <Header text="Projects" />
-        <main className="container">
-          <p className={classes.intro}>
-            Please explore my projects below. You will find a selection of my
-            web development projects so far, projects from my
-            industrial/interior design career and personal projects that I am
-            particularly proud of.
-          </p>
-          <form className={classes.filter_form}>
-            <label for="dropdown">Filter By Category</label>
-            <select
-              className={classes.filter_select}
-              onChange={(event) => {
-                this.onSelectChangeHandeler(event);
-              }}
-            >
-              {labels}
-            </select>
-          </form>
+        <FadeInTransition>
+          <main className="container">
+            <p className={classes.intro}>
+              Please explore my projects below. You will find a selection of my
+              web development projects so far, projects from my
+              industrial/interior design career and personal projects that I am
+              particularly proud of.
+            </p>
+            <form className={classes.filter_form}>
+              <label for="dropdown">Filter By Category</label>
+              <select
+                className={classes.filter_select}
+                onChange={(event) => {
+                  this.onSelectChangeHandeler(event);
+                }}
+              >
+                {labels}
+              </select>
+            </form>
 
-          <div className={classes.cardContainer}>{projectCards}</div>
-        </main>
+            <div className={classes.cardContainer}>{projectCards}</div>
+          </main>
+        </FadeInTransition>
       </div>
     );
   }
