@@ -39,9 +39,10 @@
 }
 
 .gif {
-  width: 90%;
-  min-height: 15rem;
-  border: 1px solid black;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .para {
@@ -50,20 +51,24 @@
 
 .backButton {
   padding: 0.8em 2em;
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: $colour-primary;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
   width: 100%;
   font-size: 1.2rem;
   transition: background-color 0.2s;
-  margin: 3rem 0 8rem;
 
   &:hover {
-    background-color: $colour-primary;
+    background-color: $colour-secondary;
     color: #fff;
   }
 }
 
 @media (min-width: $media-break-point-tablet) {
+  .gif {
+    width: 90%;
+  }
   .mainImg {
     margin-bottom: 0;
   }
