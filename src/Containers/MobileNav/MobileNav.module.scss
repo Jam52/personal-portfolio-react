@@ -11,7 +11,7 @@
   position: fixed;
   right: 15px;
   top: 15px;
-  background-color: $colour-light-grey;
+  background-color: $colour-primary;
   border-radius: 10000px;
   box-shadow: $shadow-sm;
 }
@@ -26,7 +26,7 @@
     border-radius: 1000px;
     width: 2rem;
     height: 2px;
-    background-color: black;
+    background-color: white;
   }
   :nth-child(1) {
     position: absolute;

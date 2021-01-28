@@ -32,7 +32,6 @@ function App() {
               <Footer />
             </Route>
           </Switch>
-
           <MobileNav />
           <MainNav />
         </div>
