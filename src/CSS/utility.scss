@@ -62,3 +62,10 @@
     margin-left: var(--gap, $spacer);
   }
 }
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    width: 80vw;
+    margin: 0 15vw 0 5vw;
+  }
+}
