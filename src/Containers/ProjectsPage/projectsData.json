@@ -170,7 +170,7 @@
       "thumb": "/images/theEdwardLogo.jpg",
       "labels": ["All", "Web Development"],
       "github": "https://github.com/Jam52/evaluate-news-nlp",
-      "hosted": "https://vast-anchorage-24801.herokuapp.com/",
+      "hosted": "https://601817b27b42f90007f862c9--upbeat-wilson-6fd9e7.netlify.app/",
       "gif": "/images/edward_gif.gif",
       "fullDescription": [
         "React, HTML5, CSS3, JavaScript",
@@ -181,14 +181,14 @@
     {
       "title": "Personal Portfolio",
       "description": "A static web page to present my accomplishments and projects so far.",
-      "details": "Html, Css, JavaScript, React",
+      "details": "HTML, CSS, JavaScript, React",
       "thumb": "/images/personal-thumb.jpg",
       "labels": ["All", "Web Development"],
       "github": "https://github.com/Jam52/personal-portfolio-react",
       "hosted": "https://www.jamiesajdak.com/",
       "fullDescription": [
-        "Technology used: React",
-        "This personal portfolio website was an exercise to improve my knowledge of html, css and React. The main focus during the building of the app was on reactive layouts, getting to better grips with flex and grid, and diving into transitions and animations."
+        "HTML, CSS, JavaScript, React",
+        "This personal portfolio website was an exercise to improve my knowledge of html, css and React. The main focus during the building of the app was on responsive layouts, getting to better grips with flex and grid, and diving into transitions and animations."
       ],
       "gif": "/images/personal.gif"
     },
