@@ -7,9 +7,8 @@
       "thumb": "/images/madame-mimis-thumb.jpg",
       "labels": ["All", "Web Development"],
       "fullDescription": [
-        "Built with React, Reduct and RESTful Api's",
-        "Jamie's wife Mia (Mimi) has a dream of opening a cocktail bar called Madame Mimi's.",
-        "Built as an exercise in React and an ode to that dream using cocktaildb.com API."
+        "React, Redux, HTML5, CSS3, JavaScript",
+        "Jamie's wife Mia (Mimi) has a dream of opening a cocktail bar called Madame Mimi's. This is a self driven project as an exercise in React and an ode to that dream. A static web aplication utilizing cocktaildb.com's API."
       ],
       "github": "https://github.com/Jam52/cocktail-app",
       "hosted": "https://vigilant-minsky-54c7d5.netlify.app/",
@@ -32,14 +31,14 @@
     {
       "title": "SmallFoods",
       "description": "A layout exercise set by an acquaintance at a marketing agency.",
-      "details": "Html, CSS, JavaScript",
+      "details": "HTML, CSS, JavaScript, Webpack",
       "thumb": "/images/smallfoods-thumb.jpg",
       "labels": ["All", "Web Development"],
       "github": "https://github.com/Jam52/small-foods__sample-project",
       "hosted": "https://silly-mirzakhani-3b8f84.netlify.app/",
       "fullDescription": [
-        "This project was set by an senior developer at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order for me to learn and improve.",
-        "Built in vanilla Html, CSS and JavaScript with attention to implementing BEM and WCAG2.0 standards."
+        "HTML, CSS, JavaScript, Webpack, with attention to implementing BEM and WCAG2.0 standards.",
+        "This project was set by an senior developer at a professional marketing company, Kula Partners, who very kindly offered to give feedback and suggestions in order for me to learn and improve."
       ],
       "gif": "/images/smartfoods.gif"
     },
@@ -174,9 +173,9 @@
       "hosted": "https://vast-anchorage-24801.herokuapp.com/",
       "gif": "/images/edward_gif.gif",
       "fullDescription": [
-        "Technology used: HTML, SASS, JavaScript, Webpack, RESTful API",
-        "This project is a single page web application for a small hosptality buiness located in Picton, ON called The Edward. They needed a simple site for curstomers to explore their various accomations, view potential booking dates and proceed with booking.",
-        "The site is intergrated with Lodgify.com's back end API's to fetch images, property details and availabilities."
+        "React, HTML5, CSS3, JavaScript",
+        "This project is a single page web application for a small hospitality business located in Picton, ON. They needed a simple site for customers to explore their various accommodations, view potential dates and proceed with bookings.",
+        "The site is integrated with Lodgify.com's API's to fetch images, property details and availability."
       ]
     },
     {
