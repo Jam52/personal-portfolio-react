@@ -7,7 +7,7 @@
 .intro {
   font-size: 1.2rem;
   max-width: 60ch;
-  padding: 0;
+  padding: 3rem 0;
   margin-top: 4rem;
 }
 
@@ -17,7 +17,8 @@
 
 .skills {
   --gap: 2rem;
-  background-color: $colour-light-grey;
+  background-color: white;
+  border: 1.5px solid black;
   box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -40,6 +41,7 @@
 
 .education {
   position: relative;
+  margin: 7rem 0 4rem 0;
 }
 
 .education_cards {
