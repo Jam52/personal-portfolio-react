@@ -2,7 +2,7 @@
 
 .intro {
   margin: 4rem 0 4rem 0;
-  padding: 0;
+  padding: 3rem 0;
   font-size: 1.2rem;
   color: #222;
   max-width: 65ch;
@@ -10,7 +10,7 @@
 
 .cardContainer {
   margin: auto;
-  margin-top: 3rem;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   grid-template-rows: auto;
