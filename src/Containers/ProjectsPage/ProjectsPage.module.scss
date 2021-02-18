@@ -1,21 +1,14 @@
 @import '../../CSS/base';
 
-.intro {
-  margin: 4rem 0 4rem 0;
-  padding: 3rem 0;
-  font-size: 1.2rem;
-  color: #222;
-  max-width: 65ch;
-}
-
 .cardContainer {
   margin: auto;
   margin: 3rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
-  grid-template-rows: auto;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer > * {
+  margin-top: 7rem;
 }
 
 .filter_form {

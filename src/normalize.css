@@ -12,12 +12,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-@media (min-width: 2000px) {
-  :root {
-    font-size: 2rem;
-  }
-}
-
 img {
   max-width: 100%;
 }
@@ -26,7 +20,12 @@ img {
  * Remove default margin.
  */
 
-body {
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 

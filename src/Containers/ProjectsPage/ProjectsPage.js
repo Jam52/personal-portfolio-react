@@ -1,73 +1,30 @@
 import React, { Component } from 'react';
 import classes from './ProjectsPage.module.scss';
-import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import projectData from './projectsData.json';
 import Header from '../../Components/Header/Header';
 import FadeInTransition from '../../Components/FadeInTransition/FadeInTransition';
 
 class ProjectPage extends Component {
-  state = {
-    projects: [],
-    labels: [
-      'Web Development',
-      'Industrial Design',
-      'Interior Design',
-      'Boardgame Design',
-      'Furniture Design',
-      'All',
-    ],
-    selectedLabel: 'Web Development',
-    selectedProject: null,
-  };
-
   componentDidMount() {
-    this.setState({
-      projects: [...projectData.data],
-    });
     window.scrollTo({
       top: 0,
       left: 0,
     });
   }
 
-  onSelectChangeHandeler = (event) => {
-    event.preventDefault();
-    this.setState({ selectedLabel: event.target.value });
-  };
-
-  selectProjectHandler = (key) => {
-    console.log(this.state.projects[key]);
-    this.props.history.push(`/project/${key}`);
-  };
-
-  removeProjectPopup = () => {
-    this.setState({ selectedProject: null });
-  };
-
   render() {
-    let filteredProjects = Object.keys(this.state.projects).filter(
-      (projectKey) => {
-        return this.state.projects[projectKey].labels.includes(
-          this.state.selectedLabel,
-        );
-      },
-    );
-
-    let projectCards = filteredProjects.map((projectKey, index) => {
+    let projectCards = projectData.data.map((project) => {
       return (
         <ProjectCard
-          project={this.state.projects[projectKey]}
-          key={index}
-          select={() => this.selectProjectHandler(projectKey)}
+          title={project.title}
+          date={project.date}
+          description={project.description}
+          gif={project.gif}
+          technology={project.technology}
+          github={project.github}
+          live={project.hosted}
         />
-      );
-    });
-
-    const labels = this.state.labels.map((label) => {
-      return (
-        <option value={label} className={classes.option}>
-          {label}
-        </option>
       );
     });
 
@@ -79,24 +36,6 @@ class ProjectPage extends Component {
         />
         <FadeInTransition>
           <main className="container">
-            <p className={classes.intro}>
-              Please explore my projects below. You will find a selection of my
-              web development projects so far, projects from my
-              industrial/interior design career and personal projects that I am
-              particularly proud of.
-            </p>
-            <form className={classes.filter_form}>
-              <label for="dropdown">Filter By Category</label>
-              <select
-                className={classes.filter_select}
-                onChange={(event) => {
-                  this.onSelectChangeHandeler(event);
-                }}
-              >
-                {labels}
-              </select>
-            </form>
-
             <div className={classes.cardContainer}>{projectCards}</div>
           </main>
         </FadeInTransition>
