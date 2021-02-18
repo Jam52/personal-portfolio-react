@@ -18,7 +18,10 @@ const AboutPage = () => {
 
   return (
     <div className={classes.landing}>
-      <Header text="About me" />
+      <Header
+        text="About me"
+        icon={process.env.PUBLIC_URL + '/images/aboutMe.svg'}
+      />
       <FadeInTransition>
         <main className="container">
           <section className={classes.intro}>

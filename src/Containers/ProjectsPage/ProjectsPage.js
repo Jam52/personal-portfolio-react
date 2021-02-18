@@ -73,7 +73,10 @@ class ProjectPage extends Component {
 
     return (
       <div data-test="component-project-card">
-        <Header text="Projects" />
+        <Header
+          text="Portfolio Projects"
+          icon={process.env.PUBLIC_URL + '/images/projects.svg'}
+        />
         <FadeInTransition>
           <main className="container">
             <p className={classes.intro}>

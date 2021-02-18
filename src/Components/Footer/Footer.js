@@ -7,7 +7,7 @@ const Footer = (props) => {
       <div className={`container ${classes.footer} control-flow`}>
         <a href="https://github.com/Jam52">
           <img
-            src={process.env.PUBLIC_URL + '/images/githubImg.png'}
+            src={process.env.PUBLIC_URL + '/images/githubImg.svg'}
             alt="gitbub"
           />
         </a>

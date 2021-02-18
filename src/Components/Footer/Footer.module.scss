@@ -4,10 +4,6 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-image: url('./torn-paper_flip.png');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
   padding: 2.5rem 0 1rem;
 }
 
@@ -28,5 +24,6 @@
 
   img {
     height: 2rem;
+    filter: $colour-primary-filter;
   }
 }

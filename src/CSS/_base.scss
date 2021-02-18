@@ -6,9 +6,11 @@ $font-paragraph: 'Raleway', sans-serif;
 $media-break-point-tablet: 700px;
 $media-break-point-phone: 500px;
 $media-break-point-computer-small: 1000px;
-$media-break-point-computer-large: 1500px;
+$media-break-point-computer-large: 1800px;
 
-$colour-primary: rgb(212, 96, 0);
+$colour-primary: #f39c12;
+$colour-primary-filter: invert(70%) sepia(30%) saturate(3970%)
+  hue-rotate(355deg) brightness(90%) contrast(91%);
 $colour-secondary: #2e1e33;
 $colour-purple: rgb(92, 64, 95);
 $colour-red: rgb(49, 41, 41);

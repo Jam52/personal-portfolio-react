@@ -12,7 +12,10 @@ const ContactPage = () => {
   });
   return (
     <div>
-      <Header text="Contact me" />
+      <Header
+        text="Contact me"
+        icon={process.env.PUBLIC_URL + '/images/contactMe.svg'}
+      />
       <FadeInTransition>
         <main className="container">
           <p className={classes.landing}>

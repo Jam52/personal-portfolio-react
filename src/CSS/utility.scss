@@ -83,3 +83,9 @@
     margin: 0 15vw 0 5vw;
   }
 }
+
+@media (min-width: $media-break-point-computer-large) {
+  .container {
+    margin: auto;
+  }
+}
