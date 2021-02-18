@@ -22,7 +22,8 @@
     width: 3rem;
     margin-left: 1rem;
 
-    filter: brightness(0.7);
+    filter: invert(70%) sepia(30%) saturate(3970%) hue-rotate(355deg)
+      brightness(100%) contrast(91%);
   }
 
   p {
@@ -40,7 +41,7 @@
 .active {
   background-color: $colour-secondary;
   img {
-    filter: brightness(1);
+    filter: invert(100%);
   }
   p {
     color: #fff;

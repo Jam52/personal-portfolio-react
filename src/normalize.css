@@ -12,6 +12,12 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+@media (min-width: 2000px) {
+  :root {
+    font-size: 2rem;
+  }
+}
+
 img {
   max-width: 100%;
 }
