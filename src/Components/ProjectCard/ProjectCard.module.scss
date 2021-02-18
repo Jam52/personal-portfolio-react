@@ -1,0 +1,104 @@
+@import '../../CSS/base';
+
+.container {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background: linear-gradient(
+    -45deg,
+    rgba(204, 204, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  display: grid;
+  grid-template-areas:
+    'gif '
+    'tech'
+    'para'
+    'link ';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $colour-primary;
+  color: white;
+  width: 15rem;
+  transform: rotate(10deg) translateX(0.5rem);
+  text-align: center;
+  h2 {
+    padding: 1rem;
+    background-color: $colour-secondary;
+    transform: rotate(-5deg);
+  }
+}
+
+.technology {
+  grid-area: tech;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  gap: 1rem;
+  color: $colour-secondary;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      filter: $colour-secondary-filter;
+      height: 1.5rem;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+.description {
+  grid-area: para;
+  & * + * {
+    margin-top: 1rem;
+  }
+}
+
+.links {
+  grid-area: link;
+  text-decoration: underline;
+
+  a {
+    color: $colour-primary;
+  }
+}
+.links > * + * {
+  margin-left: 1rem;
+}
+
+.gif {
+  grid-area: gif;
+  margin-top: 3rem;
+  width: 100%;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: $media-break-point-computer-small) {
+  .container {
+    padding: 3rem;
+    grid-template-areas:
+      'tech tech gif gif gif'
+      'para para gif gif gif'
+      'para para gif gif gif'
+      'para para gif gif gif'
+      'link link gif gif gif';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    gap: 2rem;
+  }
+
+  .gif {
+    margin-top: 0;
+  }
+}
