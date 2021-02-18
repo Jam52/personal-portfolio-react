@@ -14,7 +14,10 @@ const TechnicalPage = () => {
 
   return (
     <div className={classes.container}>
-      <Header text="Skills" />
+      <Header
+        text="Skills"
+        icon={process.env.PUBLIC_URL + '/images/technicalSkills.svg'}
+      />
       <FadeInTransition>
         <main className={`${classes.container} container control-flow-vert`}>
           <p className={classes.intro}>
