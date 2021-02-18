@@ -4,7 +4,7 @@
   font-size: 2rem;
   color: #111;
   position: relative;
-  padding: 1.5rem 0 3rem 0;
+  margin: 5vw;
   animation: typing 1.5s ease-in 0s 1;
   overflow: hidden;
   white-space: nowrap;
@@ -12,11 +12,20 @@
 
 .container {
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  filter: brightness(0.95);
+  top: 0;
+  left: 0;
+  transform: rotate(-30deg);
+  height: 100vh;
+  width: 100vh;
   animation: slidedown 0.5s ease-out 0s 1;
-  background-image: url('./torn-paper.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
 }
 
 .blink {
@@ -44,10 +53,10 @@
 
 @keyframes slidedown {
   0% {
-    transform: translateY(-50vh);
+    transform: translateY(-50vh) rotate(0deg);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(-30deg);
   }
 }
 
