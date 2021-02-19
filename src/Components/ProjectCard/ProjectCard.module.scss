@@ -3,13 +3,7 @@
 .container {
   border-radius: 0.5rem;
   padding: 2rem;
-  background: linear-gradient(
-    -45deg,
-    rgb(180, 180, 180) 0%,
-    rgba(255, 255, 255, 0.3) 40%,
-    rgba(255, 255, 255, 0.3) 60%,
-    rgb(180, 180, 180) 100%
-  );
+  background: $background-gradient;
   display: grid;
   grid-template-areas:
     'gif '
@@ -20,22 +14,6 @@
   grid-template-rows: auto;
   gap: 2rem;
   position: relative;
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: $colour-primary;
-  color: white;
-  width: 15rem;
-  transform: rotate(10deg) translateX(0.5rem);
-  text-align: center;
-  h2 {
-    padding: 1rem;
-    background-color: $colour-secondary;
-    transform: rotate(-5deg);
-  }
 }
 
 .technology {

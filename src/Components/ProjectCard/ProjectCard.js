@@ -1,21 +1,12 @@
 import React from 'react';
 import classes from './ProjectCard.module.scss';
+import icons from '../techIcons.json';
+import ArticleHeader from '../ArticleHeader/ArticleHeader';
 
 const ProjectCard = (props) => {
-  const icons = {
-    React: 'React.svg',
-    JavaScript: 'js.svg',
-    HTML5: 'html.svg',
-    CSS3: 'css.svg',
-    PostgreSQL: 'postgresql.svg',
-    Redux: 'redux.svg',
-  };
-
   return (
     <article className={classes.container}>
-      <header className={classes.header}>
-        <h2>{props.title}</h2>
-      </header>
+      <ArticleHeader header={props.header} />
       <img className={classes.gif} src={props.gif} alt="" />
       <div className={classes.links}>
         <a href={props.github}>View on Github</a>

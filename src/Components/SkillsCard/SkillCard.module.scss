@@ -1,0 +1,31 @@
+@import '../../CSS/base';
+
+.container {
+  position: relative;
+  background: $background-gradient;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.technology {
+  margin-top: 3.5rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 0.5rem;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    height: 1.5rem;
+    filter: $colour-primary-filter;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}

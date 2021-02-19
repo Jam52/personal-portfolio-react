@@ -1,0 +1,18 @@
+@import '../../CSS/base';
+
+.header {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $colour-primary;
+  color: white;
+  width: 15rem;
+  transform: rotate(10deg) translateX(0.5rem);
+  text-align: center;
+  h2 {
+    padding: 1rem;
+    background-color: $colour-secondary;
+    transform: rotate(-5deg);
+  }
+}
