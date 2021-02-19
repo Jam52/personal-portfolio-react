@@ -30,7 +30,7 @@ const AboutPage = () => {
               className={classes.profile}
               alt="jamie photograph"
             ></img>
-            <p className={classes.intro_para}>
+            <p>
               "Hi, thank you for checking out my portfolio site! I am an
               aspiring web developer, formerly industrial designer, with a
               passion for building things. Please scroll down for a little more
