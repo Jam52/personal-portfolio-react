@@ -26,3 +26,11 @@ $spacer: 1rem;
 
 $shadow: -5px 5px 12px rgba(0, 0, 0, 0.35);
 $shadow-sm: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+$background-gradient: linear-gradient(
+  -45deg,
+  rgb(180, 180, 180) 0%,
+  rgba(255, 255, 255, 1) 40%,
+  rgba(255, 255, 255, 1) 60%,
+  rgb(180, 180, 180) 100%
+);

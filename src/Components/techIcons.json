@@ -1,0 +1,19 @@
+{
+  "React": "React.svg",
+  "JavaScript": "js.svg",
+  "HTML5": "html.svg",
+  "CSS3": "css.svg",
+  "PostgreSQL": "postgresql.svg",
+  "Redux": "redux.svg",
+  "BEM Standards": "any.svg",
+  "WCAG": "any.svg",
+  "Github": "github.svg",
+  "Webpack": "webpack.svg",
+  "Chrome Dev Tools": "chrome.svg",
+  "Lighthouse": "lighthouse.svg",
+  "Postman": "Postman.svg",
+  "SCSS": "scss.svg",
+  "Express": "any.svg",
+  "Node": "node.svg",
+  "Firebase": "firebase.svg"
+}

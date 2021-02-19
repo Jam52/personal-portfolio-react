@@ -17,7 +17,7 @@ class ProjectPage extends Component {
     let projectCards = projectData.data.map((project) => {
       return (
         <ProjectCard
-          title={project.title}
+          header={project.title}
           date={project.date}
           description={project.description}
           gif={project.gif}
