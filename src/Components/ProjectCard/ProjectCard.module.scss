@@ -5,9 +5,10 @@
   padding: 2rem;
   background: linear-gradient(
     -45deg,
-    rgba(204, 204, 204, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(204, 204, 204, 1) 100%
+    rgb(180, 180, 180) 0%,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgb(180, 180, 180) 100%
   );
   display: grid;
   grid-template-areas:
