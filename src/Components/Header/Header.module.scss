@@ -53,10 +53,10 @@
 
 @keyframes slidedown {
   0% {
-    transform: translateY(-50vh) rotate(0deg);
+    transform: translateX(-50vw) rotate(0deg);
   }
   100% {
-    transform: translateY(0) rotate(-30deg);
+    transform: translateX(0) rotate(330deg);
   }
 }
 
