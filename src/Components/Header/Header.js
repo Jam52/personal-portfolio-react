@@ -10,6 +10,11 @@ const Header = (props) => {
           {props.text}
           <span className={classes.blink}>_</span>
         </h1>
+        <img
+          src={process.env.PUBLIC_URL + '/images/downArrow.svg'}
+          alt="down arrow"
+          className={classes.downArrow}
+        />
       </header>
     </div>
   );
