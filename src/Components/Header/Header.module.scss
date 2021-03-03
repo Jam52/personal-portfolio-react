@@ -28,6 +28,14 @@
   animation: roll-in 1.3s ease-out 0s 1;
 }
 
+.downArrow {
+  width: 3rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
 .blink {
   animation: blink-caret 0.75s step-end infinite;
 }

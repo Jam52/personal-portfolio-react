@@ -15,7 +15,7 @@ const SkillCard = (props) => {
               <p>{tech}</p>
               <img
                 src={`${process.env.PUBLIC_URL}/images/${icons[tech]}`}
-                alt=""
+                alt={icons[tech]}
               />
             </li>
           );
