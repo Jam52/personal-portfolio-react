@@ -59,16 +59,17 @@ const TechnicalPage = () => {
                 description="Front End Web Development"
                 href="https://graduation.udacity.com/confirm/ZPT6GESG"
                 educationImg="/images/udacityLogo.png"
-                educationAlt=""
+                educationAlt="Udacity"
                 certificateImg="/images/FrontEnd-Certificate.png"
                 background="#00b3e4"
+                color="black"
               />
               <EducationTile
                 title="FreeCodeCamp"
                 description="JS Data Structures and Algorithums"
                 href="https://www.freecodecamp.org/certification/fcc7637faad-66eb-4819-959b-167513323569/javascript-algorithms-and-data-structures"
                 educationImg="/images/freeCodeCampLogo.png"
-                educationAlt=""
+                educationAlt="free code camp"
                 certificateImg="/images/freecoaecamp_JSAlgorithmsAndDataStructures.png"
               />
               <EducationTile
@@ -76,7 +77,7 @@ const TechnicalPage = () => {
                 description="Responsive Web Design"
                 href="https://www.freecodecamp.org/certification/fcc7637faad-66eb-4819-959b-167513323569/responsive-web-design"
                 educationImg="/images/freeCodeCampLogo.png"
-                educationAlt=""
+                educationAlt="free code camp"
                 certificateImg="/images/freecoaecamp_ResponsiveWebDesign.png"
               />
 
@@ -85,7 +86,7 @@ const TechnicalPage = () => {
                 description="Front End Libraries"
                 href="https://www.freecodecamp.org/certification/fcc7637faad-66eb-4819-959b-167513323569/front-end-libraries"
                 educationImg="/images/freeCodeCampLogo.png"
-                educationAlt=""
+                educationAlt="free code camp"
                 certificateImg="/images/freecoaecamp_ResponsiveWebDesign.png"
               />
             </div>
