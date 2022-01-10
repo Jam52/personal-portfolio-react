@@ -18,11 +18,6 @@ const ContactPage = () => {
       />
       <FadeInTransition>
         <main className="container">
-          <p className={classes.landing}>
-            Please feel free to reach out, I am currently looking for employment
-            as a junior developer but am open to any and all freelancing
-            opportunities.
-          </p>
           <div className={`${classes.details} flow-vert`}>
             <div className={classes.contact}>
               <h2>Email:</h2>

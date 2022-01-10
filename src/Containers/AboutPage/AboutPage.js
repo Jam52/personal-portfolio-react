@@ -31,10 +31,10 @@ const AboutPage = () => {
               alt="jamie photograph"
             ></img>
             <p>
-              "Hi, thank you for checking out my portfolio site! I am an
-              aspiring web developer, formerly industrial designer, with a
-              passion for building things. Please scroll down for a little more
-              about me and my journey so far."
+              "Hi, thank you for checking out my portfolio site! I am a junior
+              developer, formerly industrial designer, with a passion for
+              building things. Please scroll down for a little more about me and
+              my journey so far."
             </p>
           </section>
 
@@ -66,7 +66,6 @@ const AboutPage = () => {
           <section className={classes.section}>
             <div className={classes.section_paragraph}>
               <h3 className={classes.section_subtitle}>My road to Code</h3>
-              <p>Sorry about the cheesy header, I couldn't resist!</p>
               <p>
                 A friend of mine introduced me to the world of code via a few
                 basic tutorials, when he was going through a bootcamp, he knew
@@ -74,8 +73,8 @@ const AboutPage = () => {
               </p>
               <p>
                 Turns out he was right, I became hooked. For a few years I hobby
-                coded doing a lot of intro courses in several areas and
-                languages including JavaScript, Java and Python.
+                coded doing a intro courses in several areas and languages
+                including JavaScript, Java and Python.
               </p>
               <p>
                 After it was clear coding was something I wanted to do more
@@ -84,11 +83,13 @@ const AboutPage = () => {
                 while looking after my young daughter.
               </p>
               <p>
-                Since that point I have been studying hard, gaining several
-                certifications and building my knowledge bit by bit. Working
-                with mentors, local meetup groups and friends has enabled me to
-                get to where I am now and I am excited to continue to grow and
-                learn.
+                Working with mentors, local meetup groups and friends I studied
+                hard, gaining several certifications and building my knowledge
+                bit by bit. My first break into tech has been with Adastra Corp
+                in the Business Intelegence team. Adastra is an interesting and
+                supportive company predominantly working in data and cloud. I
+                have learned so much already and am excited to continue my new
+                career.
               </p>
             </div>
             <div className={classes.section_images}>
